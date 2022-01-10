@@ -303,7 +303,7 @@
                 <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры кредита</p>
                 <form>
                   <button id="btn" class="btn_ncpk_form" disabled style="color: black;">Новый расчет</button>
-                  <button id="btn" class="btn_ncpk_form" disabled style="color: black;">Рассчитать</button>
+                  <input class="btn_ncpk_form btn_ncpk2_table" type="button" value="Рассчитать" name="button" onclick="populateTextarea()" style="color: white;">
                   <button id="btn" class="btn_ncpk_form btn_ncpk2_table"><a href="pol_ncpk_2222.html" style="text-decoration: none; color: white;">Создать заявку</a></button>
                 </form>
               </div>
@@ -350,19 +350,22 @@
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Ежемесячный платеж</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input  type="text" id="input1" value="" name="input1" class="form-control" aria-describedby="TextHelpInline">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Процентная ставка</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input class="form-control" aria-describedby="TextHelpInline" type="text" id="input2" value="" name="input2">
                   </div>
                 </div>
-                
+                <div id="hiddenfieldsDiv">
+                  <input type="hidden" id="value1" value="25000" name="value1">
+                  <input type="hidden" id="value2" value="7.9" name="value2">
+                </div>
               </div>
 
             </div>
@@ -425,7 +428,26 @@
         </div>
       </div>
 
+      <script type="text/javascript">
+    function populateTextarea() {
 
+      var element = document.getElementById("hiddenfieldsDiv");
+      var numOfChildren = element.childElementCount;
+
+      for (var i=1; i <= numOfChildren; i++) {
+
+        txt = document.getElementById('value'+i).value;
+        document.getElementById('input'+i).value = txt;
+      }
+      for (var i=2; i <= numOfChildren; i++) {
+
+        txt = document.getElementById('value'+i).value;
+        document.getElementById('input'+i).value = txt;
+      }
+
+    }
+
+  </script>
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
