@@ -309,8 +309,8 @@
                 <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры кредита</p>
                 <form>
                   <button id="btn" class="btn_ncpk_form">Новый расчет</button>
-                  <button id="btn" class="btn_ncpk_form">Рассчитать</button>
-                  <button id="btn" class="btn_ncpk_form">Создать заявку</button>
+                  <input class="btn_ncpk2_table" type="button" value="Рассчитать" name="button" style="text-decoration: none; color: white;">
+                  <button class="btn_ncpk2_table"><a href="short_ref_4444.html" style="text-decoration: none; color: white;">Создать заявку</a></button>
                 </form>
               </div>
 
@@ -322,29 +322,24 @@
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Тип продукта</label>
                   </div>
-                  <div class="col-auto">
-                    <select id="inputState" class="form-select" style="width: 207px;">
-                      <option selected></option>
-                      <option>НЦПК</option>
-                      <option>Рефинансирование</option>
-                      <option>TOP UP</option>
-                    </select>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input1" value="" name="input1" style="width: 185px; height: 32px;">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Срок кредита мес.</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input2" value="" name="input2" style="width: 185px; height: 32px;">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Сумма кредита</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input3" value="" name="input3" style="width: 185px; height: 32px;">
                   </div>
                 </div>
 
@@ -356,16 +351,16 @@
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Ежемесячный платеж</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                 <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input4" value="" name="input4" style="width: 185px; height: 32px;">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
                     <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Процентная ставка</label>
                   </div>
-                  <div class="col-auto">
-                    <input type="Text" id="inputText" class="form-control" aria-describedby="TextHelpInline">
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input5" value="" name="input5" style="width: 185px; height: 32px;">
                   </div>
                 </div>
                 
@@ -381,7 +376,7 @@
               <form class="m-2">
                   <button class="btn_ncpk2_table">Меню</button>
                   <button class="btn_ncpk2_table">Найти</button>
-                  <button class="btn_ncpk2_table"><a href="short_ref_4444.html" style="text-decoration: none; color: white;">Выбрать</a></button>
+                  <input class="btn_ncpk2_table" type="button" value="Выбрать" name="button" onclick="populateTextarea()" style="text-decoration: none; color: white;">
               </form>
             </div>
 
@@ -431,7 +426,27 @@
         </div>
       </div>
 
+      <div id="hiddenfieldsDiv">
+        <input type="hidden" id="value1" value="Рефинансирование" name="value1">
+        <input type="hidden" id="value2" value="60" name="value2">
+        <input type="hidden" id="value3" value="800000" name="value3">
+        <input type="hidden" id="value4" value="25000" name="value4">
+        <input type="hidden" id="value5" value="8.9" name="value5">
+      </div>
 
+     <script type="text/javascript">
+        function populateTextarea() {
+
+      var element = document.getElementById("hiddenfieldsDiv");
+      var numOfChildren = element.childElementCount;
+
+      for (var i=1; i <= numOfChildren; i++) {
+
+        txt = document.getElementById('value'+i).value;
+        document.getElementById('input'+i).value = txt;
+      }
+    }
+  </script>
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
