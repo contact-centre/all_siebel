@@ -223,7 +223,7 @@
                               </td>
                               <td nowrap="" valign="middle" colspan="1" rowspan="1">
                                 <div class="siebui-value_my">
-                                  <input type="text" name="" value="" aria-labelledby="" aria-label="Фамилия" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
+                                  <input type="text" name="" id="codeName" value="" aria-labelledby="" aria-label="Фамилия" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
                                 </div>
                               </td>
                               <td nowrap="" valign="middle" colspan="4" rowspan="1">
@@ -256,7 +256,7 @@
                               </td>
                               <td nowrap="" valign="middle" colspan="1" rowspan="1">
                                 <div class="siebui-value_my">
-                                  <input type="text" name="" value="" aria-labelledby="" aria-label="Имя" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
+                                  <input type="text" name="" id="Name" value="" aria-labelledby="" aria-label="Имя" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
                                 </div>
                               </td>
                               <td nowrap="" valign="middle" colspan="4" rowspan="1">
@@ -280,7 +280,7 @@
                               </td>
                               <td nowrap="" valign="middle" colspan="1" rowspan="1">
                                 <div class="siebui-value_my">
-                                  <input type="text" name="" value="" aria-labelledby="" aria-label="Отчество" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
+                                  <input type="text" name="" id="LName" value="" aria-labelledby="" aria-label="Отчество" style="height: 24px; width:120px;" class="" placeholder="" aria-readonly="false">
                                 </div>
                               </td>
                               <td nowrap="" valign="middle" colspan="4" rowspan="1">
@@ -303,7 +303,7 @@
                               </td>
                               <td nowrap="" valign="middle" colspan="1" rowspan="1">
                                 <div class="siebui-value_my">
-                                  <input type="text" name="" value="" aria-labelledby="" aria-label="Дата рождения" style="height: 24px; width:120px;" class="" aria-describedby="" placeholder="" aria-readonly="false">
+                                  <input type="text" name="" id="NumDate" value="" aria-labelledby="" aria-label="Дата рождения" style="height: 24px; width:120px;" class="" aria-describedby="" placeholder="" aria-readonly="false">
                                   <span class="" id="" aria-label="Поле даты" data-allowdblclick="true"></span>
                                 </div>
                               </td>
@@ -385,14 +385,14 @@
        
             
         <tr class="table_bottom_2 collapse"  id="collapseExample" style="background-color: #fff58a;">
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">Петрова</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">Татьяна</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">Викторовна</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">02.02.1985</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">Паспорт РФ</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">2222</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">222222</td>
-          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;">89876543210</td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
+          <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
           <th class="blok_text_2_" style="font-weight: 500; font-size: 14px;"></th>
         </tr>
      
@@ -401,10 +401,7 @@
 
     </div>
 
-
-    <script type="text/javascript">
-
-    function redirectUser() {
+<!--function redirectUser() {
   var code = document.getElementById("code").value;
   if(code == "1111"){
     window.location.href = "client_1111.html";
@@ -419,6 +416,83 @@
     window.location.href = "client_4444.html";
   }
    else if(code == "5555"){
+    window.location.href = "client_5555.html";
+  }
+}-->
+    <script type="text/javascript">
+
+function redirectUser() {
+  var codeName = document.getElementById("codeName").value;
+  if(codeName == "Иванов"){
+    window.location.href = "client_1111.html";
+  }
+  else if(codeName == "Петрова"){
+    window.location.href = "client_2222.html";
+  }
+  else if(codeName == "Сидорова"){
+    window.location.href = "client_3333.html";
+  }
+  else if(codeName == "Романов"){
+    window.location.href = "client_4444.html";
+  }
+   else if(codeName == "Скворцов"){
+    window.location.href = "client_5555.html";
+  }
+}
+
+function redirectUser() {
+  var Name = document.getElementById("Name").value;
+  if(Name == "Иван"){
+    window.location.href = "client_1111.html";
+  }
+  else if(Name == "Татьяна"){
+    window.location.href = "client_2222.html";
+  }
+  else if(codeName == "Екатерина"){
+    window.location.href = "client_3333.html";
+  }
+  else if(codeName == "Александр"){
+    window.location.href = "client_4444.html";
+  }
+   else if(codeName == "Евгений"){
+    window.location.href = "client_5555.html";
+  }
+}
+
+function redirectUser() {
+  var LName = document.getElementById("LName").value;
+  if(LName == "Иванович"){
+    window.location.href = "client_1111.html";
+  }
+  else if(LName == "Викторовна"){
+    window.location.href = "client_2222.html";
+  }
+  else if(LName == "Сергеевна"){
+    window.location.href = "client_3333.html";
+  }
+  else if(LName == "Иванович"){
+    window.location.href = "client_4444.html";
+  }
+   else if(LName == "Леонидович"){
+    window.location.href = "client_5555.html";
+  }
+}
+
+function redirectUser() {
+  var NumDate = document.getElementById("NumDate").value;
+  if(NumDate == "01.01.2001"){
+    window.location.href = "client_1111.html";
+  }
+  else if(NumDate == "02.02.1985"){
+    window.location.href = "client_2222.html";
+  }
+  else if(NumDate == "08.08.1992"){
+    window.location.href = "client_3333.html";
+  }
+  else if(NumDate == "03.03.1970"){
+    window.location.href = "client_4444.html";
+  }
+   else if(NumDate == "11.11.1990"){
     window.location.href = "client_5555.html";
   }
 }
