@@ -56,7 +56,7 @@
 
       <div class="main_del_kk">
 
-      <div class="" style="width: 65%;">
+      <div class="" style="width: 100%;">
 
       <div class="textName">
         <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
@@ -98,7 +98,7 @@
 
       <form class="">
         <table class="table table-bordered align-middle">
-          <thead>
+          <thead style="font-size: small;">
             <tr>
             <td style="text-align: center;">Доставка доступна</td>
             <td style="text-align: center;">Адрес регистрации</td>
@@ -108,7 +108,7 @@
             <td style="text-align: center;">Полнй адрес</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody style="font-size: small;">
             <tr style="background-color: #fff58a;">
               <td>
                 <div class="form-check" style="margin-left: 45%;">
@@ -408,7 +408,7 @@
 
       </div>
 
-      <div style="width: 35%;">
+      <div style="width: 45%;">
 
       <div class="refusal_del" style="width: 98%;">
         
@@ -438,7 +438,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Адрес доставки</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 400px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 100%;" disabled>
               </div>
             
           </div>
@@ -486,15 +486,15 @@
               <td style="text-align: center; font-weight: bold;">Дата</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="date">
             <tr>
               <td>
                 <div  class="form-check" style="margin-left: 45%;">
                   <input class="form-check-input" type="checkbox" id="checkboxd" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">
-                15.01.2022
+              <td class="time_" style="padding-left: 15px !important;">
+                15.08.2022
               </td>
             </tr>
             <tr>
@@ -503,7 +503,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">16.01.2022</td>
+              <td class="time_" style="padding-left: 15px !important;">16.08.2022</td>
             </tr>
             <tr>
               <td>
@@ -511,7 +511,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">17.01.2022</td>
+              <td class="time_" style="padding-left: 15px !important;">17.08.2022</td>
             </tr>
             <tr>
               <td>
@@ -519,7 +519,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">18.01.2022</td>
+              <td class="time_" style="padding-left: 15px !important;">18.08.2022</td>
             </tr>
           </tbody>
         </table>
@@ -544,14 +544,14 @@
               <td style="text-align: center; font-weight: bold;">Интервал времени доставки</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="time">
             <tr>
               <td>
                 <div  class="form-check" style="margin-left: 45%;">
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">9-14</td>
+              <td class="time_" style="padding-left: 15px !important;">9-14</td>
             </tr>
             <tr>
               <td>
@@ -559,7 +559,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxt" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">14-18</td>
+              <td class="time_" style="padding-left: 15px !important;">14-18</td>
             </tr>
             <tr>
               <td>
@@ -567,7 +567,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">18-20</td>
+              <td class="time_" style="padding-left: 15px !important;">18-20</td>
             </tr>
             <tr>
               <td>
@@ -575,7 +575,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">9-20</td>
+              <td class="time_" style="padding-left: 15px !important;">9-20</td>
             </tr>
           </tbody>
         </table>
@@ -615,6 +615,37 @@ $('#btn-on').click(function(){
   $('#btn-time').click(function(){
   $('#checkboxt').prop('checked', true);
 });
+
+</script>
+
+<style type="text/css">
+  .active {
+    background-color: #fff58a !important;
+    color: black;
+}
+</style>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("time");
+var td = header.getElementsByClassName("time_");
+for (var i = 0; i < td.length; i++) {
+  td[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+var header = document.getElementById("date");
+var td = header.getElementsByClassName("time_");
+for (var i = 0; i < td.length; i++) {
+  td[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 
 </script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
