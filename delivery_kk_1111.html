@@ -11,7 +11,7 @@
 
     <title>Siebel</title>
   </head>
-  <body>
+  <body style="width: max-content !important;">
 
     <header class="header">
 
@@ -56,7 +56,7 @@
 
       <div class="main_del_kk">
 
-      <div class="" style="width: 65%;">
+      <div class="" style="width: 100%;">
 
       <div class="textName">
         <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
@@ -242,7 +242,7 @@
               <div class="col-auto p-0">
                 <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
               </div>
-              <div class="col-sm-1 p-0" style="width: 170px;">
+              <div class="col-sm-1 p-0" style="width: 150px;">
                 <select id="inputCity" class="form-select form-select-sm City_form-select">
                 <option selected>Нижегородская</option>
                 <option>Московская</option>
@@ -438,7 +438,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Адрес доставки</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 400px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 100%;" disabled>
               </div>
             
           </div>
@@ -446,7 +446,7 @@
           <div class="adress_disabled">
             <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дата:</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 80px;">Дата:</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="дата" style="width: 100px;" disabled>
               </div>
@@ -457,7 +457,7 @@
               <label for="inputText" class="col-form-label refusal_col-form-label p-0 m-0">Интервал</label>
             </div>
             <div class="col-auto">
-              <select id="inputState" class="form-select refusal_form-select" disabled style="width: 100px;">
+              <select id="inputState" class="form-select refusal_form-select" disabled style="width: 90px;">
                 <option selected></option>
                 <option></option>
               </select>
@@ -486,15 +486,15 @@
               <td style="text-align: center; font-weight: bold;">Дата</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="date">
             <tr>
               <td>
                 <div  class="form-check" style="margin-left: 45%;">
                   <input class="form-check-input" type="checkbox" id="checkboxd" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">
-                15.11.2021
+              <td class="time_" style="padding-left: 15px !important;">
+                15.08.2022
               </td>
             </tr>
             <tr>
@@ -503,7 +503,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">16.11.2021</td>
+              <td class="time_" style="padding-left: 15px !important;">16.08.2022</td>
             </tr>
             <tr>
               <td>
@@ -511,7 +511,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">17.11.2021</td>
+              <td class="time_" style="padding-left: 15px !important;">17.08.2022</td>
             </tr>
             <tr>
               <td>
@@ -519,7 +519,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">18.11.2021</td>
+              <td class="time_" style="padding-left: 15px !important;">18.08.2022</td>
             </tr>
           </tbody>
         </table>
@@ -544,14 +544,14 @@
               <td style="text-align: center; font-weight: bold;">Интервал времени доставки</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="time">
             <tr>
               <td>
                 <div  class="form-check" style="margin-left: 45%;">
                   <input class="form-check-input" type="checkbox" id="checkboxt" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">9-14</td>
+              <td class="time_" style="padding-left: 15px !important;">9-14</td>
             </tr>
             <tr>
               <td>
@@ -559,7 +559,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">14-18</td>
+              <td class="time_" style="padding-left: 15px !important;">14-18</td>
             </tr>
             <tr>
               <td>
@@ -567,7 +567,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">18-20</td>
+              <td class="time_" style="padding-left: 15px !important;">18-20</td>
             </tr>
             <tr>
               <td>
@@ -575,7 +575,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td style="padding-left: 15px !important;">9-20</td>
+              <td class="time_" style="padding-left: 15px !important;">9-20</td>
             </tr>
           </tbody>
         </table>
@@ -617,6 +617,37 @@ $('#btn-on').click(function(){
   $('#btn-time').click(function(){
   $('#checkboxt').prop('checked', true);
 });
+
+</script>
+
+<style type="text/css">
+  .active {
+    background-color: #fff58a !important;
+    color: black;
+}
+</style>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("time");
+var td = header.getElementsByClassName("time_");
+for (var i = 0; i < td.length; i++) {
+  td[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+var header = document.getElementById("date");
+var td = header.getElementsByClassName("time_");
+for (var i = 0; i < td.length; i++) {
+  td[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 
 </script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
