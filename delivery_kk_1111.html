@@ -81,7 +81,7 @@
           <p class="del_1_text" style="color: white;">Адреса</p>
           <button class="del_1_btn_group_1">Создать</button>
           <button class="del_1_btn_group_2">Удалить</button>
-          <button class="del_1_btn_group_3">Проверить</button>
+          <button id="btn-dil" class="del_1_btn_group_3">Проверить</button>
           <button class="del_1_btn_group_4" id="btn-on">Выбрать адресом доставки</button>
           <form class="">
             <div class="input-group input-group-sm mb-3" style="width: 400px;">
@@ -108,7 +108,7 @@
             <td style="text-align: center;">Полный адрес</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="adressI">
             <tr style="background-color: #fff58a;">
               <td>
                 <div class="form-check" style="margin-left: 45%;">
@@ -132,7 +132,7 @@
               </td>
               <td>
                 <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkbox" value="" aria-label="..." style="border: none;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
               <td>111111, Россия, Нижегородская область, г Арзамас, ул Ленина, д 1</td>
@@ -186,8 +186,45 @@
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 </div>
               </td>
-              <td></td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
               <td>111111, Россия, Нижегородская область, г Арзамас, ул Ленина, д 3</td>
+            </tr>
+            <tr class="time_">
+              <td>
+                <!--<div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>-->
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxs" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkbox" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <input class="time_" type="text" name="tbl[]" value="" style="border: none !important; width: 100%;">
+              </td>
             </tr>
           </tbody>
         </table>
@@ -201,7 +238,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="111111, Россия, Нижегородская область, г Арзамас, ул Ленина, д 1" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
+                <input type="text" name="tblctrl" class="form-control form-control-sm" value="111111, Россия, Нижегородская область, г Арзамас, ул Ленина, д 1" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
               </div>
             
           </div>
@@ -214,8 +251,8 @@
             
           </div>
           </div>
-          <button class="btn_adress" style="height: 30px; margin-right: 100px;">Проверить введенный адрес</button>
-
+          <!--<button class="btn_adress" style="height: 30px; margin-right: 100px;">Проверить введенный адрес</button>-->
+          <input type="button" name="" value="Проверить введенный адрес" onclick="autocomplete_fields_in_table();" class="btn_adress" style="height: 30px; margin-right: 100px;">
         </form>
 
         <div class="adress_chapter p-0">
@@ -620,6 +657,13 @@ $('#btn-on').click(function(){
 
 </script>
 
+<script type="text/javascript">
+  $('#btn-dil').click(function(){
+  $('#checkboxs').prop('checked', true);
+});
+
+</script>
+
 <style type="text/css">
   .active {
     background-color: #fff58a !important;
@@ -648,7 +692,26 @@ for (var i = 0; i < td.length; i++) {
   });
 }
 
+var header = document.getElementById("adressI");
+var td = header.getElementsByClassName("time_");
+for (var i = 0; i < td.length; i++) {
+  td[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
+<script type="text/javascript">
+  function autocomplete_fields_in_table() {
+    var ctrl_val = document.getElementsByName("tblctrl")[0].value;
+    var oInputs = document.getElementsByTagName("table")[0].getElementsByTagName("tr")[4].getElementsByTagName("input");
+    for (var i = 0; i < oInputs.length; i++) {
+        if (oInputs[i].type.toLowerCase() != "text") { continue; }
+        oInputs[i].value = "444444, Россия, " + ctrl_val;
+    }
+}
 </script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
