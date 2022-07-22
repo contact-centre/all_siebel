@@ -186,8 +186,42 @@
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 </div>
               </td>
-              <td></td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
               <td>333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1</td>
+            </tr>
+            <tr>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td>
+                <input type="text" name="tbl[]" value="" style="border: none !important;">
+              </td>
             </tr>
           </tbody>
         </table>
@@ -201,7 +235,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
+                <input type="text" name="tblctrl" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
               </div>
             
           </div>
@@ -214,8 +248,8 @@
             
           </div>
           </div>
-          <button class="btn_adress" style="height: 30px; margin-right: 100px;">Проверить введенный адрес</button>
-
+          <!--<button class="btn_adress" style="height: 30px; margin-right: 100px;" onclick="autocomplete_fields_in_table();">Проверить введенный адрес</button>-->
+          <input type="button" name="" value="Проверить введенный адрес" onclick="autocomplete_fields_in_table();" class="btn_adress" style="height: 30px; margin-right: 100px;">
         </form>
 
         <div class="adress_chapter p-0">
@@ -649,6 +683,17 @@ for (var i = 0; i < td.length; i++) {
 }
 
 
+</script>
+
+ <script type="text/javascript">
+  function autocomplete_fields_in_table() {
+    var ctrl_val = document.getElementsByName("tblctrl")[0].value;
+    var oInputs = document.getElementsByTagName("table")[0].getElementsByTagName("tr")[4].getElementsByTagName("input");
+    for (var i = 0; i < oInputs.length; i++) {
+        if (oInputs[i].type.toLowerCase() != "text") { continue; }
+        oInputs[i].value = "444444, Россия, " + ctrl_val;
+    }
+}
 </script>
 
 
