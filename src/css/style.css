@@ -448,7 +448,7 @@ input {
     margin-right: 5px;
 }
 
-.btn_bottom_1, .btn_bottom_3, .btn_sogl_new, .btn_sogl_prod2, .btn_many, .btn_adress_pol_ncpk_2 {
+.btn_bottom_1, .btn_bottom_3, .btn_sogl_new, .btn_sogl_prod2, .btn_sogl_prod1, .btn_many, .btn_adress_pol_ncpk_2 {
 	color: white;
     font-size: 15px;
     background: linear-gradient(to bottom, #34B8D1 0%,#265553 100%);
@@ -844,6 +844,10 @@ input {
     text-shadow: -1px -1px 0 rgb(0 0 0 / 20%) !important;
     padding: 2px  !important;
     margin-left: 5px;
+}
+
+.form-check-input:checked[type=checkboxo] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
 
 @media (min-width: 1400px) {
