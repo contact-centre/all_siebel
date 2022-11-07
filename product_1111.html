@@ -95,43 +95,39 @@
           
             <div class="top_main">
               <div class="top_form">
-                <span class="top_form_name"><span class="top_form_name_">Фамилия Имя Отчество (01.01.2001)</span>-Физ.лица</span>
+                <span class="top_form_name"><span class="top_form_name_">Иванов Иван Иванович (01.01.2001)</span>-Физ.лица</span>
                 <div class="row g-3 align-items-center m-8">
                   <div class="col-auto">
                     <label for="disabledTextInput" class="col-form-label col-form-label_my">Тематика обращения</label>
-                  </div>
-                  <div class="col-auto">
-                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline">
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="disabledTextInput" class="col-form-label col-form-label_my">Потенциальный клиент</label>
-                  </div>
-                  <div class="col-auto">
-                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my" style="width: 100%; text-align: left;">Потенциальный клиент</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
                   </div>
                 </div>
-                <div class="top_form_text_red">
-                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
-                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="top_main_2">
-
-              <div class="top_main_">
-                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btn_top_main_" style="border: none;">Сохранить комментарий</button>
-              </div>
-
-              <div class="top_main_btn">
+                <div class="top_main_btn mb-4">
                 <button class="top_main_btn_">Завершить активность</button>
               </div>
+              </div>
+            </div>
+            
+            <div class="top_main_2 m-4">
+
+              <div class="top_main_" style="display: flex; flex-direction: column;">
+                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btn_top_main_ m-0" style="border: none; margin-top: 10px !important;">Сохранить комментарий</button>
+              </div>
 
             </div>
+            <div class="top_form_text_red m-4" style="text-align: right;">
+                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
+                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
+                  <p>Внимание! У клиента имеются незавершенные заявки.</p>
+                </div>
 
           </div>
 
@@ -365,13 +361,13 @@
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 250px;">Срок действия предложения</th>
                   </tr>
                   <tr style="background-color: #fff58a;">
-                    <td style="border-color: gray; border: 1px solid;">НЦПК</td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_ncpk</td>
+                    <td style="border-color: gray; border: 1px solid;"></td>
+                    <td style="border-color: gray; border: 1px solid;">PIL_FA_Online</td>
                     <td style="border-color: gray; border: 1px solid;">400 000</td>
                     <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">11.9</td>
-                    <td style="border-color: gray; border: 1px solid;">11 215</td>
-                    <td style="border-color: gray; border: 1px solid;">30.12.2021</td>
+                    <td style="border-color: gray; border: 1px solid;">10.9</td>
+                    <td style="border-color: gray; border: 1px solid;">9 269</td>
+                    <td style="border-color: gray; border: 1px solid;">30.12.2022</td>
                   </tr>
                   <tr>
                     <td></td>
@@ -405,11 +401,11 @@
         <input type="hidden" id="value5" value="RUB" name="value5">
         <input type="hidden" id="value6" value="MasterCard World" name="value6">
         <input type="hidden" id="value7" value="Неименная" name="value7">
-        <input type="hidden" id="value8" value="НЦПК" name="value8">
+        <input type="hidden" id="value8" value="PIL_FA_Online" name="value8">
         <input type="hidden" id="value9" value="60" name="value9">
-        <input type="hidden" id="value10" value="400000" name="value10">
-        <input type="hidden" id="value11" value="10000" name="value11">
-        <input type="hidden" id="value12" value="6.9" name="value12">
+        <input type="hidden" id="value10" value="400 000" name="value10">
+        <input type="hidden" id="value11" value="8 677.03" name="value11">
+        <input type="hidden" id="value12" value="10.9" name="value12">
       </div>
 
       <script type="text/javascript">
