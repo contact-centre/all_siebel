@@ -21,9 +21,11 @@
 
     </header>
       
+
+      <div class="container-fluid">
      <ul class="nav nav-tabs ui-tabs-nav " role="tablist" aria-live="off">
-        <li class="nav-item" role="tab" tabindex="-1">
-          <a data-tabindex="tabScreen0" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+        <li class="nav-item" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Домой Выбрано">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link active" role="presentation" tabindex="-1" aria-current="page" style="background-color: black; border-color: black; color: white;">
             <span class="">
               <img src="src/img/home_logo.png">
             </span>Домой
@@ -64,8 +66,8 @@
             </span>Претензионная работа
           </a>
         </li>
-        <li class="nav-item" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Телесэйлс Выбрано">
-          <a data-tabindex="tabScreen1" href="#" class="nav-link active" role="presentation" tabindex="-1" aria-current="page" style="background-color: black; border-color: black; color: white;">
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="index_.html" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
             <span class="">
               <img src="src/img/home_logo.png">
             </span>Телесэйлс
@@ -369,8 +371,9 @@
           </button>
         </div>
       </div>
+
       <table style="width: 100%;">
-        <tbody>
+       <tbody>
         <tr class="table_bottom_2">
           <th class="blok_text_2">Фамилия</th>
           <th class="blok_text_2">Имя</th>
@@ -382,8 +385,8 @@
           <th class="blok_text_2">Телефон</th>
           <th class="blok_text_2_">Электронная выписка</th>
         </tr>
+     
        
-            
         <tr class="table_bottom_2 collapse"  id="collapseExample" style="background-color: #fff58a;">
           <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
           <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
@@ -395,11 +398,12 @@
           <td class="blok_text_2" style="font-weight: 500; font-size: 14px;"></td>
           <th class="blok_text_2_" style="font-weight: 500; font-size: 14px;"></th>
         </tr>
-     
-        </tbody>
+     </tbody>
+        
       </table>
 
     </div>
+  </div>
 
 <!--function redirectUser() {
   var code = document.getElementById("code").value;
@@ -424,76 +428,76 @@
 function redirectUser() {
   var codeName = document.getElementById("codeName").value;
   if(codeName == "Иванов"){
-    window.location.href = "client_1111.html";
+    window.location.href = "client_home_1111.html";
   }
   else if(codeName == "Петрова"){
-    window.location.href = "client_2222.html";
+    window.location.href = "client_home_2222.html";
   }
   else if(codeName == "Сидорова"){
-    window.location.href = "client_3333.html";
+    window.location.href = "client_home_3333.html";
   }
   else if(codeName == "Романов"){
-    window.location.href = "client_4444.html";
+    window.location.href = "client_home_4444.html";
   }
    else if(codeName == "Скворцов"){
-    window.location.href = "client_5555.html";
+    window.location.href = "client_home_5555.html";
   }
 }
 
 function redirectUser() {
   var Name = document.getElementById("Name").value;
   if(Name == "Иван"){
-    window.location.href = "client_1111.html";
+    window.location.href = "client_home_1111.html";
   }
   else if(Name == "Татьяна"){
-    window.location.href = "client_2222.html";
+    window.location.href = "client_home_2222.html";
   }
   else if(codeName == "Екатерина"){
-    window.location.href = "client_3333.html";
+    window.location.href = "client_home_3333.html";
   }
   else if(codeName == "Александр"){
-    window.location.href = "client_4444.html";
+    window.location.href = "client_home_4444.html";
   }
    else if(codeName == "Евгений"){
-    window.location.href = "client_5555.html";
+    window.location.href = "client_home_5555.html";
   }
 }
 
 function redirectUser() {
   var LName = document.getElementById("LName").value;
   if(LName == "Иванович"){
-    window.location.href = "client_1111.html";
+    window.location.href = "client_home_1111.html";
   }
   else if(LName == "Викторовна"){
-    window.location.href = "client_2222.html";
+    window.location.href = "client_home_2222.html";
   }
   else if(LName == "Сергеевна"){
-    window.location.href = "client_3333.html";
+    window.location.href = "client_home_3333.html";
   }
   else if(LName == "Иванович"){
-    window.location.href = "client_4444.html";
+    window.location.href = "client_home_4444.html";
   }
    else if(LName == "Леонидович"){
-    window.location.href = "client_5555.html";
+    window.location.href = "client_home_5555.html";
   }
 }
 
 function redirectUser() {
   var NumDate = document.getElementById("NumDate").value;
   if(NumDate == "01.01.2001"){
-    window.location.href = "client_1111.html";
+    window.location.href = "client_home_1111.html";
   }
   else if(NumDate == "02.02.1985"){
-    window.location.href = "client_2222.html";
+    window.location.href = "client_home_2222.html";
   }
   else if(NumDate == "08.08.1992"){
-    window.location.href = "client_3333.html";
+    window.location.href = "client_home_3333.html";
   }
   else if(NumDate == "03.03.1970"){
-    window.location.href = "client_4444.html";
+    window.location.href = "client_home_4444.html";
   }
    else if(NumDate == "11.11.1990"){
-    window.location.href = "client_5555.html";
+    window.location.href = "client_home_5555.html";
   }
 }
 </script>
