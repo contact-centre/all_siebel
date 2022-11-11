@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
   </head>
   <body>
 
@@ -90,7 +111,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -118,138 +139,100 @@
       <div style="display: flex; flex-direction: row; width: 100%;">
         <div class="textName" style="width: 50%;">
           <p class="info_pol_ncpk_3" style="width: 80%;">Основная информация</p>
-          <div style="display: flex; flex-direction: row;">
+          <div style="display: flex; flex-direction: row; margin-bottom: 5px;">
             <div style="width: 40%;">
               <div style="display: flex; flex-direction: row; margin: 5px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1;">Кодовое слово <span style="color: red;">*</span></label>
-                <input type="" name="" placeholder="" value="">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 2;">Кодовое слово <span style="color: red;">*</span></label>
+                <input type="" name="" placeholder="" value="" style="height: 30px !important; width: 40%; margin-left: 5px;">
               </div>
               <div style="display: flex; flex-direction: row; margin: 5px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1;">Общий трудовой стаж<br>мес<span style="color: red;">*</span></label>
-                <input type="" name="" placeholder="" value="">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 1;">Общий трудовой стаж<br>мес<span style="color: red;">*</span></label>
+                <input type="" name="" placeholder="" value="" style="height: 30px !important; width: 40%; margin-left: 5px;">
               </div>
               <div style="display: flex; flex-direction: row; margin: 5px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1;">Количество человек<br> на иждивении<span style="color: red;">*</span></label>
-                <input type="" name="" placeholder="" value="">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 1;">Количество человек<br> на иждивении<span style="color: red;">*</span></label>
+                <input type="" name="" placeholder="" value="" style="height: 30px !important; width: 40%; margin-left: 5px;">
               </div>
             </div>
             <div style="width: 60%;">
               <div style="display: flex; flex-direction: row; margin-bottom: 4px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1; margin-right: 3px;">Статус жилья по месту<br> проживания<span style="color: red;">*</span></label>
-                <select id="inputState" class="form-select" style="height: 32px; width: 200px;">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 1; margin-right: 3px;">Статус жилья по месту<br> проживания<span style="color: red;">*</span></label>
+                <select id="inputState" class="form-select" style="height: 30px !important; width: 25%; margin-left: 5px; padding: 0; font-size: 14px;">
                 <option selected></option>
-                <option>Служебное жилье</option>
-                <option>Аренда</option>
-                <option>Иное</option>
-                <option>У родственников</option>
-                <option>Собственность</option>
-                <option>Социальный найм</option>
-                <option>Общежитие/Гостиница</option>
+                <option style="background: black; color: white; font-size: 14px;">Служебное жилье</option>
+                <option style="background: black; color: white; font-size: 14px;">Аренда</option>
+                <option style="background: black; color: white; font-size: 14px;">Иное</option>
+                <option style="background: black; color: white; font-size: 14px;">У родственников</option>
+                <option style="background: black; color: white; font-size: 14px;">Собственность</option>
+                <option style="background: black; color: white; font-size: 14px;">Социальный найм</option>
+                <option style="background: black; color: white; font-size: 14px;">Общежитие/Гостиница</option>
               </select>
               </div>
               <div style="display: flex; flex-direction: row; margin-bottom: 4px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1; margin-right: 3px;">Семейное положение<span style="color: red;">*</span></label>
-                <select id="inputState" class="form-select" style="height: 32px; width: 200px;">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 2; margin-right: 3px;">Семейное положение<span style="color: red;">*</span></label>
+                <select id="inputState" class="form-select" style="height: 30px !important; width: 25%; margin-left: 5px; padding: 0; font-size: 14px;">
                 <option selected></option>
-                <option>В браке не состоял(а)</option>
-                <option>Замужем/женат</option>
-                <option>Вдова (вдовец)</option>
-                <option>Разведен(а)</option>
-                <option>Гражданский брак</option>
+                <option style="background: black; color: white; font-size: 14px;">В браке не состоял(а)</option>
+                <option style="background: black; color: white; font-size: 14px;">Замужем/женат</option>
+                <option style="background: black; color: white; font-size: 14px;">Вдова (вдовец)</option>
+                <option style="background: black; color: white; font-size: 14px;">Разведен(а)</option>
+                <option style="background: black; color: white; font-size: 14px;">Гражданский брак</option>
               </select>
               </div>
               <div style="display: flex; flex-direction: row; margin-bottom: 4px;">
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1; margin-right: 3px;">Образование</label>
-                <select id="inputState" class="form-select" style="height: 32px; width: 200px;">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 2; margin-right: 3px;">Образование</label>
+                <select id="inputState" class="form-select" style="height: 30px !important; width: 25%; margin-left: 5px; padding: 0; font-size: 14px;">
                 <option selected></option>
-                <option>Высшее</option>
-                <option>Среднее полное</option>
-                <option>Среднее специальное</option>
-                <option>Неоконченное высшее</option>
+                <option style="background: black; color: white; font-size: 14px;">Высшее</option>
+                <option style="background: black; color: white; font-size: 14px;">Среднее полное</option>
+                <option style="background: black; color: white; font-size: 14px;">Среднее специальное</option>
+                <option style="background: black; color: white; font-size: 14px;">Неоконченное высшее</option>
               </select>
               </div>
               <div>
-                <label style="width: 170px; font-size: 14px; text-align: right; color: gray; line-height: 1;">E-mail</label>
-                <input type="" name="" placeholder="" value="" style="width: 200px; margin-bottom: 4px;">
+                <label style="width: 150px; font-size: 14px; text-align: right; color: gray; line-height: 1;">E-mail</label>
+                <input type="" name="" placeholder="" value="" style="height: 30px !important; width: 25%; margin-left: 5px;">
               </div>
             </div>
           </div>
         </div>
         <div class="textName" style="width: 50%;">
           <div>
-          <div class="del_1" style="height: 50px; padding-top: 10px;">
+          <div class="del_1" style="height: 40px; padding-top: 5px;">
         <div class="del_1_btn_group" style="height: 30px;">
-          <p class="del_1_text" style="color: white;">Телефоны</p>
-          <button class="del_1_btn_group_1">Создать</button>
-          <button class="del_1_btn_group_1">Удалить</button>
+          <p class="del_1_text" style="color: white; margin-top: 3px;">Телефоны</p>
+          <button class="del_1_btn_group_1" style="font-size: 13px; padding: 5px; padding-top: 3px;" id="addRow">Создать</button>
+          <button class="del_1_btn_group_1" style="font-size: 13px; padding: 5px; padding-top: 3px;">Удалить</button>
         </div>
       </div>
 
       <form class="">
         <table class="table table-bordered align-middle">
           <thead>
-            <tr>
+            <tr style="font-size: 13px;">
             <td style="text-align: center; width: 20%;">Основной</td>
-            <td style="text-align: center; width: 20%;">Номер телефона</td>
-            <td style="text-align: center;">Тип телефона</td>
+            <td style="text-align: center; width: 20%;">Тип телефона</td>
+            <td style="text-align: center;">Номер телефона</td>
             </tr>
           </thead>
-          <tbody>
-            <tr style="background-color: #fff58a;">
-              <td>
-                <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="border: none !important;"> 
-                </div>
-              </td>
-              <td>
-                <select class="form-select form-select-sm" aria-label="select example" style="padding: 7px;">
-                  <option selected>Домашний</option>
-                  <option>Домашний</option>
-                  <option>Мобильнй телефон</option>
-                  <option>Рабочий</option>
-                  <option>Дополнительный телефон</option>
-                </select>
-              </td>
-              <td>
-                <input class="number_polKK4" type="" name="" placeholder="" value="+79181716151" style="width: 100%; border: none !important; background-color: #fff58a;">
-              </td>
-            </tr>
+          <tbody id="node">
             <tr>
               <td>
                 <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  style="border: none !important;" checked> 
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  style="border: none !important; padding: 0;" checked> 
                 </div>
               </td>
               <td>
-                <select class="form-select form-select-sm" aria-label="select example" style="padding: 7px;">
+                <select class="form-select form-select-sm" aria-label="select example" style="padding: 0px;">
                   <option selected>Мобильнй телефон</option>
                   <option>Домашний</option>
                   <option>Мобильнй телефон</option>
                   <option>Рабочий</option>
-                  <option>Дополнительный телефон</option>
+                  <option>Доп. контактный тел.</option>
                 </select>
               </td>
               <td>
-                <input class="number_polKK4" type="" name="" placeholder="" value="+79282726252" style="width: 100%; border: none !important;">
-              </td> 
-            </tr>
-            <tr>
-              <td>
-                <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" style="border: none !important;"> 
-                </div>
-              </td>
-              <td>
-                <select class="form-select form-select-sm" aria-label="select example" style="padding: 7px;">
-                  <option selected>Рабочий</option>
-                  <option>Домашний</option>
-                  <option>Мобильнй телефон</option>
-                  <option>Рабочий</option>
-                  <option>Дополнительный телефон</option>
-                </select>
-              </td>
-              <td>
-                <input class="number_polKK4" type="" name="" placeholder="" value="+79383736353" style="width: 100%; border: none !important;">
+                <input class="number_polKK4" type="" name="" placeholder="" value="+79282726252" style="width: 100%; border: none !important; font-size: 12px; line-height: 2;">
               </td> 
             </tr>
           </tbody>
@@ -280,9 +263,9 @@
               </select>
               </div>
             </div>
-            <div style="display: flex; flex-direction: row;">
-              <label style="width: 200px; text-align: right; line-height: 1; margin-right: 25px;">Иное (на машину, <br>образование)</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="width: 370px;"></textarea>
+            <div style="display: flex; flex-direction: row; margin-top: 5px;">
+              <label style="width: 200px; text-align: right; line-height: 1; margin-right: 25px; line-height: 2;">Иное (на машину, <br>образование)</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" style="width: 370px;"></textarea>
             </div>
           </form>
       </div>
@@ -298,6 +281,13 @@
 
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
+   <script>
+      document.getElementById("addRow").onclick = function() {
+    var row = document.createElement("tr");
+    row.innerHTML = "<td><div><input></div></td><td><select><option selected></option><option>Домашний</option><option>Мобильнй телефон</option><option>Рабочий</option><option>Доп. контактный тел.</option></select></td><td><input></td>";
+    document.getElementById("node").appendChild(row);
+};
+</script>
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
