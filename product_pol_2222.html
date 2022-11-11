@@ -95,7 +95,7 @@
           
             <div class="top_main">
               <div class="top_form">
-                <span class="top_form_name"><span class="top_form_name_">Фамилия Имя Отчество (01.01.2001)</span>-Физ.лица</span>
+                <span class="top_form_name"><span class="top_form_name_">Петрова Татьяна Викторовна (02.02.1985)</span>-Физ.лица</span>
                 <div class="row g-3 align-items-center m-8">
                   <div class="col-auto">
                     <label for="disabledTextInput" class="col-form-label col-form-label_my">Тематика обращения</label>
@@ -150,7 +150,7 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
               
-              <div class="card_main" style="width: max-content;">
+              <div class="card_main" style="width: max-content; flex-direction: row;">
                 <div class="parametr_pro" style="width: 50%;">
                   <div class="btn_card">
                     <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры карты</p>
@@ -187,7 +187,7 @@
                     <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Продукт</label>
                   </div>
                   <div class="col-auto">
-                    <select id="inputState" class="form-select" style="width: 185px; height: 32px;">
+                    <select id="inputState p-0" class="form-select" style="width: 185px; height: 32px;">
                       <option selected></option>
                       <option>МТС Деньги ZERO</option>
                       <option>МТС Деньги Weekend</option>
@@ -224,7 +224,7 @@
                   <div class="col-auto">
                     <select id="inputState" class="form-select" style="width: 185px; height: 32px;">
                       <option selected></option>
-                      <option>MasterCard World</option>
+                      <option>МИР - Полноформатный</option>
                     </select>
                   </div>
                 </div>
@@ -243,7 +243,7 @@
                   </div>
                 </div>
 
-                <div class="parametr_pro2" style="width: 100%; height: 200px;">
+                <div class="parametr_pro2" style="width: 50%; height: 200px;">
             <div class="btn_ncpk2 d-flex">
               <p class="m-2">Предложения</p>
               <form class="m-2">
@@ -302,7 +302,7 @@
               <div class="btn_ncpk">
                 <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры кредита</p>
                 <form>
-                  <button id="btn" class="btn_ncpk_form" disabled style="color: black;">Новый расчет</button>
+                  <input type="button" name="" value="Новый расчет" class="btn_ncpk_form btn_ncpk2_table">
                   <input class="btn_ncpk_form btn_ncpk2_table" type="button" value="Рассчитать" name="button" onclick="populateTextarea()" style="color: white;">
                   <button id="btn" class="btn_ncpk_form btn_ncpk2_table"><a href="pol_ncpk_2222.html" style="text-decoration: none; color: white;">Создать заявку</a></button>
                 </form>
@@ -319,9 +319,9 @@
                   <div class="col-auto">
                     <select id="inputState" class="form-select" style="width: 207px;">
                       <option selected></option>
-                      <option>НЦПК</option>
-                      <option>Рефинансирование</option>
-                      <option>TOP UP</option>
+                      <option style="background: black; color: white;">НЦПК</option>
+                      <option style="background: black; color: white;">Рефинансирование</option>
+                      <option style="background: black; color: white;">Topup</option>
                     </select>
                   </div>
                 </div>
