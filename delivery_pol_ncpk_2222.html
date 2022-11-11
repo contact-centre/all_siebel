@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
   </head>
   <body>
 
@@ -59,7 +80,7 @@
       <div class="" style="width: 65%;">
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       
@@ -90,12 +111,12 @@
         <table class="table table-bordered align-middle">
           <thead>
             <tr>
-            <td style="text-align: center;">Доставка доступна</td>
-            <td style="text-align: center;">Адрес регистрации</td>
-            <td style="text-align: center;">Адрес проживания</td>
-            <td style="text-align: center;">Рабочий адрес</td>
-            <td style="text-align: center;">Адрес доставки</td>
-            <td style="text-align: center;">Полнй адрес</td>
+            <td style="text-align: center; font-size: 12px;">Доставка доступна</td>
+            <td style="text-align: center; font-size: 12px;">Адрес регистрации</td>
+            <td style="text-align: center; font-size: 12px;">Адрес проживания</td>
+            <td style="text-align: center; font-size: 12px;">Рабочий адрес</td>
+            <td style="text-align: center; font-size: 12px;">Адрес доставки</td>
+            <td style="text-align: center; font-size: 12px;">Полнй адрес</td>
             </tr>
           </thead>
           <tbody>
@@ -125,7 +146,7 @@
                   <input class="form-check-input" type="checkbox" id="checkbox" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td>222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2</td>
+              <td style=" font-size: 13px;">222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2</td>
             </tr>
             <tr>
               <td>
@@ -153,7 +174,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td>222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 3</td>
+              <td style=" font-size: 13px;">222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 3</td>
             </tr>
             <tr>
               <td>
@@ -176,20 +197,24 @@
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 </div>
               </td>
-              <td></td>
-              <td>333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1</td>
+              <td>
+                <div  class="form-check" style="margin-left: 45%;">
+                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
+                </div>
+              </td>
+              <td style=" font-size: 13px;">333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1</td>
             </tr>
           </tbody>
         </table>
       </form>
       </div>
 
-      <div class="adress_chapter_main">
+      <div class="adress_chapter_main" style="width: 100%; overflow-x: scroll; overflow-y: hidden;">
         <form class="form-adress">
           <div class="">
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Введите адрес</label>
               <div class="col-5">
                 <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
               </div>
@@ -197,7 +222,7 @@
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Полный адрес</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Полный адрес</label>
               <div class="col-5">
                 <input type="text" class="form-control form-control-sm" value="111111, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
               </div>
@@ -208,11 +233,11 @@
 
         </form>
 
-        <div class="adress_chapter p-0">
-          <form class="">
+        <div class="adress_chapter p-0" style="width: max-content;">
+          <form class="" style="width: 40%;">
             <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Индекс</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Индекс</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="222222" placeholder="" aria-label="Индекс" style="width: 150px;">
               </div>
@@ -220,7 +245,7 @@
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Страна</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Страна</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="Российская Федерация" placeholder="" aria-label="Страна" style="width: 165px;">
               </div>
@@ -228,7 +253,7 @@
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Регион</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Регион</label>
               <div class="col-auto p-0">
                 <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
               </div>
@@ -242,7 +267,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Город</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Город</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected>г</option>
@@ -258,7 +283,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px; line-height: 0.9;">Внутригородская территория</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px; line-height: 0.9;">Внутригородская территория</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected></option>
@@ -274,11 +299,11 @@
   
 
           </form>
-          <form class="">
+          <form class="" style="width: 40%;">
             
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Район</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Район</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected></option>
@@ -293,7 +318,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Населенный пункт</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px; line-height: 0.9;">Населенный пункт</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected></option>
@@ -309,7 +334,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Планировочная структура</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px; line-height: 0.9;">Планировочная структура</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected></option>
@@ -325,7 +350,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Улица</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Улица</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected>ул</option>
@@ -339,7 +364,7 @@
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Дом</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="2" placeholder="" aria-label="Индекс" style="width: 253px;">
               </div>
@@ -356,7 +381,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Корпус</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Корпус</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Корпус" style="width: 150px;">
               </div>
@@ -365,7 +390,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Строение</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Строение</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Строение" style="width: 150px;">
               </div>
@@ -374,7 +399,7 @@
 
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Квартира</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px;">Квартира</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 150px;">
               </div>
@@ -386,7 +411,7 @@
         <div class="adress_end" style="margin-left: 15px; padding-left: 10px;">
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 128px; line-height: 0.9;">Резолюция<br> Факора</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 120px; line-height: 0.9;">Резолюция<br> Факора</label>
               <div class="col-sm-1">
                 <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 400px;">
               </div>
@@ -422,7 +447,7 @@
         
       </div>
 
-      <div class="del_info">
+      <div class="del_info" style="font-size: 13px;">
         <p class="del_info_text p-0 m-0">Если по адресам клиента доставка недоступна, введите новый адрес</p>
         <p class="del_info_text p-0 m-0">Если клиент отказался от доставки или доставка недоступна, выберите самовывоз</p>
         <p class="del_info_text_red p-0 m-0" style="color: red;">Внимание! Если выбран самовывоз, доставка не будет осуществлена!</p>
@@ -434,156 +459,11 @@
         </div>
       </div>
 
-      <div class="adress_result">
-        <form>
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Адрес доставки</label>
-              <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 400px;" disabled>
-              </div>
-            
-          </div>
+      
 
-          <div class="adress_disabled">
-            <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дата:</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="дата" style="width: 100px;" disabled>
-              </div>
-            
-          </div>
-          <div class="row m-0 p-0">
-            <div class="col-auto refusal_form-list">
-              <label for="inputText" class="col-form-label refusal_col-form-label p-0 m-0">Интервал</label>
-            </div>
-            <div class="col-auto">
-              <select id="inputState" class="form-select refusal_form-select" disabled style="width: 100px;">
-                <option selected></option>
-                <option></option>
-              </select>
-            </div>
-          </div>
+      
 
-          </div>
-
-        </form>
-      </div>
-
-      <div style="margin: 5px; border: solid 2px #e9e9e9; border-radius: 10px;">
-
-      <div class="date_bg">
-        
-          <p class="date_bg_text">Доступные даты</p>
-          <button class="date_bg_btn" id="btn-date">Выбрать</button>
-        
-      </div>
-
-      <form>
-        <table class="table table-bordered align-middle">
-          <thead>
-            <tr>
-              <td style="text-align: center; font-weight: bold; width: 20%;">Выбрано</td>
-              <td style="text-align: center; font-weight: bold;">Дата</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxd" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">
-                15.11.2021
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">16.11.2021</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">17.11.2021</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">18.11.2021</td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-
-      </div>
-
-      <div style="margin: 5px; border: solid 2px #e9e9e9; border-radius: 10px;">
-
-      <div class="time_bg">
-        
-          <p class="time_bg_text">Интервалы времени</p>
-          <button class="time_bg_btn" id="btn-time">Выбрать</button>
-        
-      </div>
-
-      <form>
-        <table class="table table-bordered align-middle">
-          <thead>
-            <tr>
-              <td style="text-align: center; font-weight: bold; width: 20%;">Выбрано</td>
-              <td style="text-align: center; font-weight: bold;">Интервал времени доставки</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">9-14</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">14-18</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxt" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">18-20</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td style="padding-left: 15px !important;">9-20</td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-
-      </div>
+     
 
 
 
