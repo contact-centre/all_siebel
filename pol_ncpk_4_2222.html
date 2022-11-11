@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
   </head>
   <body>
 
@@ -95,7 +116,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word" style="text-align: right;">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -121,47 +142,43 @@
       </div>
 
 
-      <div class="work">
-        <button class="btn_top_2">Создать</button>
+      <div class="work workk">
+        <button class="btn_top_2"><a href="pol_ncpk_1_4_2222.html" style="text-decoration: none; color: darkgray;">Создать</a></button>
         <p class="work_text">Сведения о занятости</p>
         <div class="mb-1" style="display: flex; flex-direction: row;">
-          <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 200px; font-size: 14px;">Данные о работодателе</label>
-          <input type="text" class="form-control form-control-sm" placeholder="" value="" style="width: 30%;">
+          <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 210px; font-size: 14px; padding-right: 25px;">Данные о работодателе</label>
+          <input type="text" class="form-control form-control-sm" placeholder="" value="" style="width: 47%;" disabled>
         </div>
-        <div class="work_block">
+        <div class="work_block workk_block">
           <div class="work_block_1">
             <form class="work_form">
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 200px;">Вид занятости<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 210px;">Вид занятости<span style="color: red;">*</span></label>
               <div class="col-sm-1" style="width: 250px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
-                <option>ИП/Частная практика</option>
-                <option>Не занят (нет работы, бизнеса)</option>
-                <option>Пенсионер</option>
-                <option>иной вид деятельности</option>
-                <option>Собств.бизнес/Совладелец</option>
-                <option>Собственник/совладелец компании</option>
-                <option>Студент</option>
                 <option>Работа/служба по найму</option>
+                <option>Индивидуальный предприниматель</option>
+                <option>Частная практика</option>
+                <option>Пенсионер</option>
               </select>
               </div>
             
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 200px;">Полное наименование<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 210px;">Полное наименование<span style="color: red;">*</span></label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Организация" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Организация" style="width: 225px;" disabled>
               </div>
             
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 200px; line-height: 1;">Направление деятельности<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 210px; line-height: 1;">Направление деятельности<span style="color: red;">*</span></label>
               <div class="col-sm-1" style="width: 250px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>Аудит, консалтинг</option>
                 <option>Здравоохран и социальная сфера</option>
@@ -181,9 +198,9 @@
           </div>
           <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 200px;">Прочее</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 210px;">Прочее</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Организация" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Организация" style="width: 225px;" disabled>
               </div>
             
           </div>
@@ -193,17 +210,17 @@
             <form class="work_form">
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px;">Дата приема на работу<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px;">Дата приема на работу<span style="color: red;">*</span></label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Дата приема на работу" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Дата приема на работу" style="width: 225px;" disabled>
               </div>
             
               </div>
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px; line-height: 1;">Уровень должности<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px; line-height: 1;">Уровень должности<span style="color: red;">*</span></label>
               <div class="col-sm-1" style="width: 250px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>Руководитель высшего звена</option>
                 <option>Сотрудник/работник</option>
@@ -214,9 +231,9 @@
           </div>
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px;">Полное наименование должности<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px;">Полное наименование должности<span style="color: red;">*</span></label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;" disabled>
               </div>
             
               </div>
@@ -228,9 +245,9 @@
           <form>
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px; line-height: 1;">Сфера занятий клиента<span style="color: red;">*</span></label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px; line-height: 1;">Сфера занятий клиента<span style="color: red;">*</span></label>
               <div class="col-sm-1" style="width: 250px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>PR, маркетинг, связи с обществ</option>
                 <option>Админ.- хоз деятельность</option>
@@ -245,25 +262,25 @@
             </div>
             <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px;">Иное</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px;">Иное</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;" disabled>
               </div>
             
               </div>
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px;">ИНН</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px;">ИНН</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="наименование должности" style="width: 225px;" disabled>
               </div>
             
               </div>
               <div class="row mb-1">
             
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 300px; line-height: 1;">Телефон руководства<br>/бухгалтерии/отдела кадров</label>
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 270px; line-height: 1;">Телефон руководства<br>/бухгалтерии/отдела кадров</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="+7" placeholder="" aria-label="Телефон" style="width: 225px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Телефон" style="width: 225px;" disabled>
               </div>
             
               </div>
@@ -274,8 +291,8 @@
       <div class="work adress_work" style="height: 200px;">
         <div class="sogl_prod_btn" style="background-color: #e9e9e9;">
           <p class="p-1 m-1" style="font-weight: 500;">Рабочие адреса</p>
-          <button class="btn_many" style="margin: 3px;" data-bs-toggle="collapse"data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Создание</button>
-          <button class="btn_many" style="margin: 3px;">Удаление</button>
+          <button class="btn_many" style="margin: 5px; font-size: 13px;" data-bs-toggle="collapse"data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" disabled>Создание</button>
+          <button class="btn_many" style="margin: 5px; font-size: 13px;" disabled>Удаление</button>
         </div>
         <div class="table_pro">
               <table style="width: 100%;">
@@ -293,7 +310,7 @@
                     </td>
                     <td>
                       <div id="hiddenfieldsDiv">
-                        <input type="hidden" id="value1" value="333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1" name="value1" style="width: 100%;">
+                        <input type="hidden" id="value1" value="" name="value1" style="width: 100%;" disabled>
         
                       </div>
                       <div id="visiblefieldsDiv">
@@ -317,7 +334,7 @@
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
               
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 500px;" disabled>
               </div>
                     
             
@@ -327,13 +344,13 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Полный адрес</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Полный адрес" style="width: 500px;" disabled>
               </div>
             
           </div>
           </div>
           
-          <input class="btn_adress btn_adress_pol" type="button" value="Проверить введенный адрес" name="button" onclick="populateTextarea()" style="height: 30px; position: relative; right: 30%;">
+          <input class="btn_adress btn_adress_pol" type="button" value="Проверить введенный адрес" name="button" onclick="populateTextarea()" style="height: 30px; position: relative; right: 30%;" disabled>
           
         </form>
 
@@ -343,7 +360,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Индекс</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="333333" placeholder="" aria-label="Индекс" style="width: 150px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Индекс" style="width: 150px;" disabled>
               </div>
             
           </div>
@@ -351,7 +368,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Страна</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="Российская Федерация" placeholder="" aria-label="Страна" style="width: 165px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Страна" style="width: 165px;" disabled>
               </div>
             
           </div>
@@ -359,11 +376,11 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Регион</label>
               <div class="col-auto p-0">
-                <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;" disabled>
               </div>
               <div class="col-sm-1 p-0" style="width: 170px;">
-                <select id="inputCity" class="form-select form-select-sm City_form-select">
-                <option selected>Нижегородская</option>
+                <select id="inputCity" class="form-select form-select-sm City_form-select" disabled>
+                <option selected></option>
                 <option>Московская</option>
               </select>
               </div>
@@ -373,15 +390,15 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Город</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>г</option>
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
+                <option selected></option>
                 <option>стн</option>
                 <option>поселок</option>
                 <option>деревня</option>
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Арзамас" placeholder="город" aria-label="город" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="город" style="width: 170px;" disabled>
               </div>
           </div>
 
@@ -389,7 +406,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Внутригородская территория</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>стн</option>
                 <option></option>
@@ -397,7 +414,7 @@
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="город" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="город" style="width: 170px;" disabled>
               </div>
           </div>
   
@@ -409,14 +426,14 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Район</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>р-н</option>
                 <option>мкрн</option>
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="район" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="район" style="width: 170px;" disabled>
               </div>
           </div>
 
@@ -424,7 +441,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Населенный пункт</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option>стн</option>
                 <option>поселок</option>
@@ -432,7 +449,7 @@
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Населенный пункт" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Населенный пункт" style="width: 170px;" disabled>
               </div>
           </div>
 
@@ -440,7 +457,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Планировочная структура</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
                 <option selected></option>
                 <option></option>
                 <option></option>
@@ -448,7 +465,7 @@
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Планировочная структура" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Планировочная структура" style="width: 170px;" disabled>
               </div>
           </div>
 
@@ -456,21 +473,21 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Улица</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>ул</option>
+                <select id="inputSex" class="form-select form-select-sm sex_form-select" disabled>
+                <option selected></option>
                 <option>пр-т</option>
                 <option>проезд</option>
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Советская" placeholder="" aria-label="улица" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="улица" style="width: 170px;" disabled>
               </div>
           </div>
           <div class="row mb-1">
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="1" placeholder="" aria-label="Дом" style="width: 253px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Дом" style="width: 253px;" disabled>
               </div>
             
           </div>
@@ -479,7 +496,7 @@
             <div class="del_info_text_chek">
           <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
             <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Изменить адрес</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked">
           </div>
         </div>
 
@@ -487,7 +504,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Корпус</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Корпус" style="width: 150px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Корпус" style="width: 150px;" disabled>
               </div>
             
           </div>
@@ -496,7 +513,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Строение</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Строение" style="width: 150px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Строение" style="width: 150px;" disabled>
               </div>
             
           </div>
@@ -505,7 +522,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Квартира</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 150px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 150px;" disabled>
               </div>
             
           </div>
