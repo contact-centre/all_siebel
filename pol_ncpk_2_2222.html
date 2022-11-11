@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+
   </head>
   <body>
 
@@ -79,8 +80,8 @@
         <li class="nav-item nav-item_kk" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false"></li>
       </ul>
 
-      <div class="typeQuest">
-        <p class="">Оформление заявки на карту &ensp;&ensp;<span class="typeQuest_plus">Полная анкета 1 из 2</span></p>
+      <div class="typeQuest" style="width: 50%;">
+        <p class="">Оформление заявки на кредит &ensp;&ensp;<span class="typeQuest_plus">Короткая анкета. Дополнительная информация</span></p>
       </div>
     
       <div class="btn_top">
@@ -90,7 +91,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -114,241 +115,21 @@
           </div>
         
       </div>
-
-      
-      <nav class="adress_chapter_main adress_chapter_main_pol" style="display: flex; flex-direction: row;">
+      <div style="display: flex; flex-direction: row;">
+      <button class="p-0" type="" style="border-radius: 5px; border-color: transparent; color: darkgray;">Создать</button>
+      <nav class="adress_chapter_main adress_chapter_main_pol m-0" style="display: flex; flex-direction: row;">
          
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Адрес регистрации</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Адрес проживания</button>
+          <input type="button" name="test" class="nav-link test p-0"  data-bs-toggle="tab" data-bs-target="#nav-profile" value="Адрес проживания" role="tab" aria-controls="nav-profile" aria-selected="true"/>
+          <button class="nav-link p-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Адрес регистрации</button>
         </div>
       </nav>
-<div class="tab-content" id="nav-tabContent">
+    </div>
+<div class="tab-content" id="nav-tabContent" style="border: #dee2e6 solid 2px;">
   
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
      <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес регистрации</p>
-     <form class="form-adress">
-          <div class="">
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
-              <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
-              </div>
-            
-          </div>
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Полный адрес</label>
-              <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
-              </div>
-            
-          </div>
-          </div>
-          <button class="btn_adress btn_adress_pol" style="height: 30px; position: relative; right: 30%;">Проверить введенный адрес</button>
-
-        </form>
-
-        <div class="adress_chapter p-0" style="justify-content: start;">
-          <form class="" style="margin-right: 30px;">
-            <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Индекс</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="222222" placeholder="" aria-label="Индекс" style="width: 150px;">
-              </div>
-            
-          </div>
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Страна</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="Российская Федерация" placeholder="" aria-label="Страна" style="width: 165px;">
-              </div>
-            
-          </div>
-          <div class="row mb-1" style="width: max-content;">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Регион</label>
-              <div class="col-auto p-0">
-                <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-              </div>
-              <div class="col-sm-1 p-0" style="width: 170px;">
-                <select id="inputCity" class="form-select form-select-sm City_form-select">
-                <option selected>Нижегородская</option>
-                <option>Московская</option>
-              </select>
-              </div>
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Город</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>г</option>
-                <option>стн</option>
-                <option>поселок</option>
-                <option>деревня</option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Арзамас" placeholder="город" aria-label="город" style="width: 170px;">
-              </div>
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Внутригородская территория</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected></option>
-                <option>стн</option>
-                <option></option>
-                <option></option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="город" style="width: 170px;">
-              </div>
-          </div>
-  
-
-          </form>
-          <form class="" style="margin-right: 30px;">
-            
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Район</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected></option>
-                <option>р-н</option>
-                <option>мкрн</option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="район" style="width: 170px;">
-              </div>
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Населенный пункт</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected></option>
-                <option>стн</option>
-                <option>поселок</option>
-                <option>деревня</option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Населенный пункт" style="width: 170px;">
-              </div>
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Планировочная структура</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected></option>
-                <option></option>
-                <option></option>
-                <option></option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Планировочная структура" style="width: 170px;">
-              </div>
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Улица</label>
-              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
-                <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>ул</option>
-                <option>пр-т</option>
-                <option>проезд</option>
-              </select>
-              </div>
-              <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Школьная" placeholder="" aria-label="улица" style="width: 170px;">
-              </div>
-          </div>
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="2" placeholder="" aria-label="Индекс" style="width: 253px;">
-              </div>
-            
-          </div>
-          </form>
-          <form class="">
-            <div style="display: flex; flex-direction: row; margin-bottom: 20px; margin-left: 50px;">
-            <div class="del_info_text_chek">
-          <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
-            <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Совпадает с адресом <br>фактического <br>проживания</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          </div>
-        </div>
-            <div class="del_info_text_chek">
-          <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
-            <label class="form-check-label refusal_form-check-label" for="flexCheckDefault">Изменить адрес</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          </div>
-        </div>
-      </div>
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Корпус</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Корпус" style="width: 150px;">
-              </div>
-            
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Строение</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Строение" style="width: 150px;">
-              </div>
-            
-          </div>
-
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Квартира</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 150px;">
-              </div>
-            
-          </div>
-          </form>
-        </div>
-
-        <div class="adress_end" style="margin-left: 15px; padding-left: 10px;">
-          <div class="row mb-1">
-            
-              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 125px; line-height: 0.9;">Резолюция<br> Фактора</label>
-              <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 400px;" disabled>
-              </div>
-            
-          </div>
-        </div>
-
-      </div>
- 
-  
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-    <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес проживания</p>
      <form class="form-adress">
           <div class="">
           <div class="row mb-1">
@@ -515,7 +296,228 @@
             <div class="del_info_text_chek">
           <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
             <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Совпадает с адресом <br>фактического <br>проживания</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <input class="form-check-input refusal_form-check-input" name='test' type="checkbox" value="" onclick="Go(this)"/>
+          </div>
+        </div>
+            <div class="del_info_text_chek">
+          <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
+            <label class="form-check-label refusal_form-check-label" for="flexCheckDefault">Изменить адрес</label>
+            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          </div>
+        </div>
+      </div>
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Корпус</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Корпус" style="width: 150px;">
+              </div>
+            
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Строение</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Строение" style="width: 150px;">
+              </div>
+            
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Квартира</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 150px;">
+              </div>
+            
+          </div>
+          </form>
+        </div>
+
+        <div class="adress_end" style="margin-left: 15px; padding-left: 10px;">
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 125px; line-height: 0.9;">Резолюция<br> Фактора</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 400px;" disabled>
+              </div>
+            
+          </div>
+        </div>
+
+      </div>
+ 
+  
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес регистрации</p>
+     <form class="form-adress">
+          <div class="">
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
+              <div class="col-5">
+                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
+              </div>
+            
+          </div>
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Полный адрес</label>
+              <div class="col-5">
+                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
+              </div>
+            
+          </div>
+          </div>
+          <button class="btn_adress btn_adress_pol" style="height: 30px; position: relative; right: 30%;">Проверить введенный адрес</button>
+
+        </form>
+
+        <div class="adress_chapter p-0" style="justify-content: start;">
+          <form class="" style="margin-right: 30px;">
+            <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Индекс</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="222222" placeholder="" aria-label="Индекс" style="width: 150px;">
+              </div>
+            
+          </div>
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Страна</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="Российская Федерация" placeholder="" aria-label="Страна" style="width: 165px;">
+              </div>
+            
+          </div>
+          <div class="row mb-1" style="width: max-content;">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Регион</label>
+              <div class="col-auto p-0">
+                <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+              </div>
+              <div class="col-sm-1 p-0" style="width: 170px;">
+                <select id="inputCity" class="form-select form-select-sm City_form-select">
+                <option selected>Нижегородская</option>
+                <option>Московская</option>
+              </select>
+              </div>
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Город</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected>г</option>
+                <option>стн</option>
+                <option>поселок</option>
+                <option>деревня</option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="Арзамас" placeholder="город" aria-label="город" style="width: 170px;">
+              </div>
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Внутригородская территория</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected></option>
+                <option>стн</option>
+                <option></option>
+                <option></option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="город" style="width: 170px;">
+              </div>
+          </div>
+  
+
+          </form>
+          <form class="" style="margin-right: 30px;">
+            
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Район</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected></option>
+                <option>р-н</option>
+                <option>мкрн</option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="район" style="width: 170px;">
+              </div>
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Населенный пункт</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected></option>
+                <option>стн</option>
+                <option>поселок</option>
+                <option>деревня</option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Населенный пункт" style="width: 170px;">
+              </div>
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px; line-height: 0.9;">Планировочная структура</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Планировочная структура" style="width: 170px;">
+              </div>
+          </div>
+
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Улица</label>
+              <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <select id="inputSex" class="form-select form-select-sm sex_form-select">
+                <option selected>ул</option>
+                <option>пр-т</option>
+                <option>проезд</option>
+              </select>
+              </div>
+              <div class="col-sm-1 p-0">
+                <input type="text" class="form-control form-control-sm" value="Школьная" placeholder="" aria-label="улица" style="width: 170px;">
+              </div>
+          </div>
+          <div class="row mb-1">
+            
+              <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
+              <div class="col-sm-1">
+                <input type="text" class="form-control form-control-sm" value="2" placeholder="" aria-label="Индекс" style="width: 253px;">
+              </div>
+            
+          </div>
+          </form>
+          <form class="">
+            <div style="display: flex; flex-direction: row; margin-bottom: 20px; margin-left: 50px;">
+            <div class="del_info_text_chek">
+          <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
+            <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Совпадает с адресом <br>фактического <br>проживания</label>
+            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="">
           </div>
         </div>
             <div class="del_info_text_chek">
@@ -609,9 +611,13 @@ function insert (word) {
 }
 </script>
 
+
+
+
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
