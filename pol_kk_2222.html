@@ -10,6 +10,28 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        color: gray;
+        line-height: 2;
+        padding: 0 !important;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
   </head>
   <body style="width: auto !important;">
 
@@ -90,7 +112,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -116,9 +138,9 @@
       </div>
 
       
-      <div class="pol_top_str1" style="width: max-content !important;">
+      <div class="pol_top_str1" style="width: 100% !important;">
         
-        <div class="personal p-2" style="width: min-content; overflow: auto;">
+        <div class="personal p-2" style="width: 90%; overflow: auto;">
         <p class="personal_text" style="width: 100%;">Персональные данные клиента</p>
         <div class="form_name" style="width: max-content;">
         <form class="">
@@ -199,11 +221,11 @@
           </div>
       </div>
 
-      <div class="passport passport_pol p-2" style="width: auto; overflow: auto;">
+      <div class="passport passport_pol p-2" style="width: 90%; width: -webkit-fill-available; overflow: auto;">
         <p class="passport_text" style="width: 100%;">Паспортные данные клиента</p>
         <button class="btn_passport_pol">Создание</button>
         <div class="row mb-1">
-        <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm p-0" style="text-align: right; width: 100px; line-height: 1;">Тип <br>документа</label>
+        <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm p-0" style="text-align: right; width: 100px;">Тип документа</label>
               <div class="col-sm-1" style="width: auto;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
                 <option selected>Общегрожданский паспорт</option>
@@ -212,7 +234,7 @@
               </div>
           </div>
         <form class="passport_form">
-          <div class="passport_block_1">
+          <div class="passport_block_1" style="width: 70%;">
             <div class="row mb-1">
             
               
@@ -235,7 +257,7 @@
             
           </div>
           </div>
-          <div class="passport_block_2">
+          <div class="passport_block_2" style="width: 30%;">
             <div class="row mb-1">
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm p-0" style="text-align: right; width: 100px; line-height: 2;">Дата выдачи</label>
