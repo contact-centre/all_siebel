@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      #node input {
+        text-align: right;
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -90,7 +117,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -128,7 +155,7 @@
                 <label for="inputText" class="col-form-label mobi_form-label">Мобильный телефон</label>
               </div>
               <div class="col-auto">
-                <input type="text" id="inputText" class="form-control" aria-describedby="textHelpInline" placeholder="" value="+79876543210">
+                <input type="text" id="inputText" class="form-control p-0" aria-describedby="textHelpInline" placeholder="" value="+79876543210">
               </div>
             </div>
             <div class="row g-3 align-items-center" style="margin-left: 40px;">
@@ -136,7 +163,7 @@
                 <label for="inputText" class="col-form-label mobi_form-label">E-mail</label>
               </div>
               <div class="col-auto">
-                <input type="text" id="inputText" class="form-control" aria-describedby="textHelpInline" placeholder="" value="">
+                <input type="text" id="inputText" class="form-control p-0" aria-describedby="textHelpInline" placeholder="" value="">
               </div>
             </div>
           </form>
@@ -145,19 +172,25 @@
       <div class="sogl_prod" style="border-radius: 10px; border: solid 2px #e9e9e9; margin: 10px; height: 200px; width: 100%;">
         <div class="sogl_prod_btn" style="background-color: #e9e9e9;">
           <p class="p-1 m-1" style="font-weight: 500;">Доходы</p>
-          <button class="btn_many" style="margin: 3px;" data-bs-toggle="collapse"data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Создание</button>
+          <!--<button class="btn_many" style="margin: 3px;" data-bs-toggle="collapse"data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="addRow">Создание</button>-->
+          <button class="del_1_btn_group_1 m-1" style="font-size: 13px; padding: 5px; padding-top: 3px;" id="addRow">Создание</button>
           <button class="btn_many_delite" style="margin: 3px;">Удаление</button>
         </div>
 
         <div class="table_pro">
-              <table style="width: 100%;">
-                <tbody  style="text-align: center;">
+              <table style="width: 100%;" class="table">
+                
+                 <thead>
                   <tr>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 10%;">Тип</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Сумма</th>
-                    
+                    <th class="blok_text_2 p-0" style="font-size: 10px; width: 20%;">Тип</th>
+                    <th class="blok_text_2 p-0" style="font-size: 10px;">Сумма</th>
                   </tr>
-                  <tr class="collapse" style="text-align: left;" id="collapseExample">
+                  </thead>
+                  <tbody  style="text-align: center;" id="node">
+                    <tr>
+                      
+                    </tr>
+                  <!--<tr><tr class="collapse" style="text-align: left;" id="collapseExample">
                     <td>
                       <select class="form-select form-select-sm" aria-label="select example" style="padding: 7px;">
                         <option selected></option>
@@ -182,7 +215,7 @@
                       <input type="text" class="form-control" id="inputText" placeholder="0.00Руб">
                     </td>
                     
-                  </tr>
+                  </tr>-->
                 </tbody>
               </table>
             </div>
@@ -224,7 +257,7 @@
               </div>
               <div class="" style="display: flex; flex-direction: row; margin: 3px;">
                 <label style="line-height: 1; width: 200px; font-size: 14px; text-align: right; padding-right: 10px;">Степень родства<br>с ИПДЛ/ПДЛ</label>
-                <select class="form-select" aria-label="select" style="width: 160px; height: 30px; padding: 0;" disabled>
+                <select class="form-select" aria-label="select" style="width: 220px; height: 30px; padding: 0;" disabled>
                   <option selected></option>
                   <option value="1"></option>
                   <option value="2"></option>
@@ -232,11 +265,11 @@
               </div>
               <div class="" style="display: flex; flex-direction: row; margin: 3px;">
                 <label style="line-height: 1; width: 200px; font-size: 14px; text-align: right; padding-right: 10px;">Должность родственника<br>ИПДЛ/ПДЛ</label>
-                <input type="text" name="" id="inputText" style="width: 160px; height: 30px;" disabled>
+                <input type="text" name="" id="inputText" style="width: 220px; height: 30px;" disabled>
               </div>
               <div class="" style="display: flex; flex-direction: row; margin: 3px;">
                 <label style="line-height: 1; width: 200px; font-size: 14px; text-align: right; padding-right: 10px;">ФИО родственника-ПДЛ/<br>ИПДЛ</label>
-                <input type="text" name="" id="inputText" style="width: 160px; height: 30px;" disabled>
+                <input type="text" name="" id="inputText" style="width: 220px; height: 30px;" disabled>
               </div>
               <div class="" style="display: flex; flex-direction: row; margin: 3px;">
                 <label style="line-height: 2; width: 200px; font-size: 14px; text-align: right; padding-right: 10px;">Поясняющие комментарии</label>
@@ -365,7 +398,13 @@
 
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
-
+    <script>
+      document.getElementById("addRow").onclick = function() {
+    var row = document.createElement("tr");
+    row.innerHTML = "<td><select><option selected></option><option>Рег.доход по осн.месту работы</option><option>Рег.доход по доп.месту работы</option></select></td><td><input></td>";
+    document.getElementById("node").appendChild(row);
+};
+</script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
