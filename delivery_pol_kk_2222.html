@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+        padding: 0;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
 
@@ -59,10 +85,10 @@
       <div class="" style="width: 100%;">
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
-      <div class="del_info">
+      <div class="del_info" style="font-size: small;">
         <p class="del_info_text p-0 m-0">Если по адресам клиента доставка недоступна, введите новый адрес</p>
         <p class="del_info_text p-0 m-0">Если клиент отказался от доставки или доставка недоступна, выберите самовывоз</p>
         <p class="del_info_text_red p-0 m-0" style="color: red;">Внимание! Если выбран самовывоз, доставка не будет осуществлена!</p>
@@ -79,7 +105,7 @@
       <div class="del_1" style="height: 50px; padding-top: 10px;">
         <div class="del_1_btn_group" style="height: 30px;">
           <p class="del_1_text" style="color: white;">Адреса</p>
-          <button class="del_1_btn_group_1">Создать</button>
+          <button class="btn_top_3"><a href="delivery_pol_kk_1_2222.html" style="text-decoration: none; color: white;">Создать</a></button>
           <button class="del_1_btn_group_2">Удалить</button>
           <button class="del_1_btn_group_3">Проверить</button>
           <button class="del_1_btn_group_4" id="btn-on">Выбрать адресом доставки</button>
@@ -165,64 +191,8 @@
               </td>
               <td>222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 3</td>
             </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1</td>
-            </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <input type="text" name="tbl[]" value="" style="border: none !important; width: 100%;">
-              </td>
-            </tr>
+            
+            
           </tbody>
         </table>
       </form>
@@ -235,7 +205,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Введите адрес</label>
               <div class="col-5">
-                <input type="text" name="tblctrl" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
+                <input type="text" name="tblctrl" class="form-control form-control-sm" value="" placeholder="Введите адрес" aria-label="Введите адрес" style="width: 500px;">
               </div>
             
           </div>
@@ -243,12 +213,12 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Полный адрес</label>
               <div class="col-5">
-                <input type="text" class="form-control form-control-sm" value="222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 2" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="Полный адрес" aria-label="Полный адрес" style="width: 500px;" disabled>
               </div>
             
           </div>
           </div>
-          <!--<button class="btn_adress" style="height: 30px; margin-right: 100px;" onclick="autocomplete_fields_in_table();">Проверить введенный адрес</button>-->
+          <!--<button class="btn_adress" style="height: 30px; margin-right: 100px;">Проверить введенный адрес</button>-->
           <input type="button" name="" value="Проверить введенный адрес" onclick="autocomplete_fields_in_table();" class="btn_adress" style="height: 30px; margin-right: 100px;">
         </form>
 
@@ -258,7 +228,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Индекс</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="222222" placeholder="" aria-label="Индекс" style="width: 150px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Индекс" style="width: 150px;">
               </div>
             
           </div>
@@ -266,7 +236,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Страна</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="Российская Федерация" placeholder="" aria-label="Страна" style="width: 165px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Страна" style="width: 165px;">
               </div>
             
           </div>
@@ -274,11 +244,12 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Регион</label>
               <div class="col-auto p-0">
-                <input type="text" class="form-control form-control-sm" value="область" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Регион" style="width: 80px; margin-right: 3px; margin-left: 12px;">
               </div>
-              <div class="col-sm-1 p-0" style="width: 170px;">
+              <div class="col-sm-1 p-0" style="width: 150px;">
                 <select id="inputCity" class="form-select form-select-sm City_form-select">
-                <option selected>Нижегородская</option>
+                <option selected></option>
+                <option>Нижегородская</option>
                 <option>Московская</option>
               </select>
               </div>
@@ -289,14 +260,15 @@
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 126px;">Город</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>г</option>
+                <option selected></option>
+                <option>г</option>
                 <option>стн</option>
                 <option>поселок</option>
                 <option>деревня</option>
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Арзамас" placeholder="город" aria-label="город" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="город" aria-label="город" style="width: 170px;">
               </div>
           </div>
 
@@ -372,20 +344,21 @@
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Улица</label>
               <div class="col-sm-1 p-0" style="width: 80px; margin-right: 3px; margin-left: 12px;">
                 <select id="inputSex" class="form-select form-select-sm sex_form-select">
-                <option selected>ул</option>
+                <option selected></option>
+                <option>ул</option>
                 <option>пр-т</option>
                 <option>проезд</option>
               </select>
               </div>
               <div class="col-sm-1 p-0">
-                <input type="text" class="form-control form-control-sm" value="Школьная" placeholder="" aria-label="улица" style="width: 170px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="улица" style="width: 170px;">
               </div>
           </div>
           <div class="row mb-1">
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="2" placeholder="" aria-label="Индекс" style="width: 253px;">
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Индекс" style="width: 253px;">
               </div>
             
           </div>
@@ -528,7 +501,7 @@
                 </div>
               </td>
               <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">
-                15.08.2022
+                15.12.2022
               </td>
             </tr>
             <tr>
@@ -537,7 +510,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">16.08.2022</td>
+              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">16.12.2022</td>
             </tr>
             <tr>
               <td>
@@ -545,7 +518,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">17.08.2022</td>
+              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">17.12.2022</td>
             </tr>
             <tr>
               <td>
@@ -553,7 +526,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">18.08.2022</td>
+              <td class="time_" style="padding-left: 15px !important;" style="background-color: white;" onclick="return ChangeColor(this);">18.12.2022</td>
             </tr>
           </tbody>
         </table>
