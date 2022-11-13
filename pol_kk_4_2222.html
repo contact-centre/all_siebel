@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+        padding: 0;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
 
@@ -44,7 +67,7 @@
         <li class="nav-item nav-item_kk" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false"></li>
       </ul>
 
-      <div class="typeQuest" style="width: 30%;">
+      <div class="typeQuest" style="width: 40%;">
         <p class="">Оформление заявки на карту &ensp;&ensp;<span class="typeQuest_plus">Дополнительная информация</span></p>
       </div>
     
@@ -59,7 +82,7 @@
    
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - Петрова Татьяна Викторовна Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal_del" style="position: relative; left: 40%;">
@@ -116,10 +139,10 @@
               </td>
               <td>
                 <select class="form-select form-select-sm" aria-label="select example" style="padding: 7px;">
-                  <option selected>Домашний</option>
+                  <option selected>Доп. котактный тел.</option>
                   <option>Домашний</option>
                   <option>Мобильнй телефон</option>
-                  <option>Дополнительный телефон</option>
+                  <option>Доп. котактный тел.</option>
                 </select>
               </td>
             </tr>
@@ -137,7 +160,7 @@
                   <option selected>Мобильнй телефон</option>
                   <option>Домашний</option>
                   <option>Мобильнй телефон</option>
-                  <option>Дополнительный телефон</option>
+                  <option>Доп. котактный тел.</option>
                 </select>
               </td>
             </tr>
@@ -170,7 +193,7 @@
           <form style="display: flex; flex-direction: row;">
           <div class="m-1">
             <label style="width: 150px;">Кодовое слово:</label>
-            <input type="text" name="" placeholder="" value="">
+            <input type="text" name="" placeholder="" value="" class="p-1">
           </div>
           <div>
             <div class="m-1">
@@ -202,7 +225,6 @@
                 <option selected>Адрес регистрации</option>
                 <option>Адрес регистрации</option>
                 <option>Адрес проживания</option>
-                <option>Рабочий адрес</option>
               </select>
             </div>
           </form>
@@ -260,26 +282,7 @@
               
               <td>222222, Россия, Нижегородская область, г Арзамас, ул Школьная, д 3</td>
             </tr>
-            <tr>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              <td>
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                </div>
-              </td>
-              
-              <td>
-                <div class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                </div>
-              </td>
-              
-              <td>333333, Россия, Нижегородская область, г Арзамас, ул Советская, д 1</td>
-            </tr>
+            
           </tbody>
         </table>
       </form>
