@@ -10,6 +10,35 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      #node input {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -90,7 +119,7 @@
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - РОМАНОВ АЛЕКСАНДР ИВАНОВИЧ Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal">
@@ -125,7 +154,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 100px;">Результат</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="Предварительно одобрено" placeholder="" aria-label="Результат" style="width: auto;">
+                <input type="text" class="form-control form-control-sm" value="Предварительно одобрена" placeholder="" aria-label="Результат" style="width: auto;">
               </div>
             
           </div>
@@ -191,12 +220,12 @@
       <div class="sogl_prod" style="border-radius: 10px; border: solid 2px #e9e9e9; margin: 10px; height: 200px;">
         <div class="sogl_prod_btn" style="background-color: #e9e9e9;">
           <p class="p-1 m-1" style="font-weight: 500;">Предложения банка</p>
-          <form>
+          
             <button class="btn_sogl_prod2 m-1" id="btn-on">Выбор предложения</button>
-            <button class="btn_sogl_prod2">Все</button>
+            <button class="btn_sogl_prod2 m-1">Все</button>
             <button class="btn_sogl_prod3" style="background-color: white;">Страхование</button>
             <button class="btn_sogl_prod4" style="background-color: white;">Пакет услуг</button>
-          </form>
+          
         </div>
 
         <div class="table_pro">
@@ -208,11 +237,11 @@
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Одобренная сумма</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Желаемая сумма</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Минимальная сумма</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ежемесячный платеж</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Сумма рефинансирования</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Процентная ставка</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Срок кредита</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Платеж доступный</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ежемесячный платеж</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Платеж, доступны</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Режим принятия решения</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Получение</th>
                   </tr>
@@ -222,17 +251,17 @@
                         <input class="form-check-input" type="checkbox" id="checkbox" value="" aria-label="..." style="border: none;">
                       </div>
                     </td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_Refinance</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">20 843</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">8.9</td>
-                    <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">30 000</td>
-                    <td style="border-color: gray; border: 1px solid;">ONLINE</td>
-                    <td style="border-color: gray; border: 1px solid; font-size: 14px;">ДО,РТК,ДБО,Доставка</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">PIL_FA_Refinance</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">171 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">171 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">151 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">151 037Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">10.5</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">60</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">5 288.14Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">Руб</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">ONLINE</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 11px; text-align: left;">ДО, ДБО, Доставка, РТК</td>
                   </tr>
                   <tr>
                     <td style="border-color: gray; border: 1px solid;">
@@ -240,54 +269,19 @@
                         <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                       </div>
                     </td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_Refinance</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">19 158</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">15.3</td>
-                    <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">30 000</td>
-                    <td style="border-color: gray; border: 1px solid;">ONLINE</td>
-                    <td style="border-color: gray; border: 1px solid; font-size: 14px;">ДО,РТК,ДБО,Доставка</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">PIL_FA_Refinance</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">171 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">171 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">151 000Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">151 037Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">10.5</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">60</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">5 108.89Руб.</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">Руб</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left;">ONLINE</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 11px; text-align: left;">ДО, ДБО, Доставка, РТК</td>
                   </tr>
-                  <tr>
-                    <td style="border-color: gray; border: 1px solid;">
-                      <div  class="form-check" style="margin-left: 45%;">
-                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                      </div>
-                    </td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_Refinance</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">20 643</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">8.9</td>
-                    <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">30 000</td>
-                    <td style="border-color: gray; border: 1px solid;">ONLINE</td>
-                    <td style="border-color: gray; border: 1px solid; font-size: 14px;">ДО,РТК,ДБО,Доставка</td>
-                  </tr>
-                  <tr>
-                    <td style="border-color: gray; border: 1px solid;">
-                      <div  class="form-check" style="margin-left: 45%;">
-                        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
-                      </div>
-                    </td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_Refinance</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">800 000</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">18 958</td>
-                    <td style="border-color: gray; border: 1px solid;">602 000</td>
-                    <td style="border-color: gray; border: 1px solid;">15.3</td>
-                    <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">30 000</td>
-                    <td style="border-color: gray; border: 1px solid;">ONLINE</td>
-                    <td style="border-color: gray; border: 1px solid; font-size: 14px;">ДО,РТК,ДБО,Доставка</td>
-                  </tr>
+                  
                 </tbody>
               </table>
             </div>
@@ -321,7 +315,7 @@
               <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Ежемесячный платеж</th>
               <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Текущая сумма задолженности</th>
             </tr>
-            <tr>
+            <tr style="background-color: #fff58a;">
               <td style="border-color: #ced4da; border: 1px solid;">
                 <div  class="form-check" style="margin-left: 45%;">
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;" checked>
@@ -341,36 +335,12 @@
               <td style="border-color: #ced4da; border: 1px solid;"></td>
               <td style="border-color: #ced4da; border: 1px solid;"></td>
               <td style="border-color: #ced4da; border: 1px solid;"></td>
-              <td style="border-color: #ced4da; border: 1px solid;">31.10.2017</td>
-              <td style="border-color: #ced4da; border: 1px solid;">400 000.00Руб</td>
-              <td style="border-color: #ced4da; border: 1px solid;">15 000.00Руб</td>
-              <td style="border-color: #ced4da; border: 1px solid; text-align: left;">340 000.00Руб</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left;">10.01.2022</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: right;">165 000.00Руб</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: right;">0.00Руб</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: right;">151 037.00Руб</td>
             </tr>
-            <tr>
-              <td style="border-color: #ced4da; border: 1px solid;">
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;" checked>
-                </div>
-              </td>
-              <td style="border-color: #ced4da; border: 1px solid;">
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;" checked>
-                </div>
-              </td>
-              <td style="border-color: #ced4da; border: 1px solid;">
-                <div  class="form-check" style="margin-left: 45%;">
-                  <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;" checked>
-                </div>
-              </td>
-              <td style="border-color: #ced4da; border: 1px solid; text-align: left;">Потребительский кредит</td>
-              <td style="border-color: #ced4da; border: 1px solid;"></td>
-              <td style="border-color: #ced4da; border: 1px solid;"></td>
-              <td style="border-color: #ced4da; border: 1px solid;"></td>
-              <td style="border-color: #ced4da; border: 1px solid;">16.12.2020</td>
-              <td style="border-color: #ced4da; border: 1px solid;">500 000.00Руб</td>
-              <td style="border-color: #ced4da; border: 1px solid;">10 000.00Руб</td>
-              <td style="border-color: #ced4da; border: 1px solid; text-align: left;">262 000.00Руб</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
@@ -394,12 +364,12 @@
                   </tr>
                   <tr style="text-align: left;">
                     <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Страхование жизни</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">131 600</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; text-align: center;">42480</td>
                     
                   </tr>
                   <tr style="text-align: left;">
                     <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Страхование от потери работы</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">70 000</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; text-align: center;">26550</td>
                     
                   </tr>
                 </tbody>
@@ -407,7 +377,7 @@
             </div>
       </div>
 
-      <div class="sogl_prod" style="border-radius: 10px; border: solid 2px #e9e9e9; margin: 10px; height: 200px; width: 40%;">
+      <div class="sogl_prod" style="border-radius: 10px; border: solid 2px #e9e9e9; margin: 10px; height: 200px; width: 50%;">
         <div class="sogl_prod_btn" style="background-color: #e9e9e9;">
           <p class="p-1 m-1" style="font-weight: 500;">Услуги</p>
           
@@ -418,27 +388,32 @@
                 <tbody  style="text-align: center;">
                   <tr>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Наименование услуги</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Стоимость услуги</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Стоимость</th>
                     
                   </tr>
                   <tr style="text-align: left;">
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Вместо платежа</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1 500.00</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; width: auto; font-size: 12px;">Уменьшение размера платежа за счет увеличения срока кредита</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500</td>
                     
                   </tr>
                   <tr style="text-align: left;">
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Изменение даты платежа в течении срока жизни</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500.00</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; width: auto; font-size: 12px;">Изменение даты платежа в течении срока жизни</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500</td>
                     
                   </tr>
                   <tr style="text-align: left;">
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Пропуск платежа</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500.00</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; width: auto; font-size: 12px;">Пропуск платежа</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500</td>
                     
                   </tr>
                   <tr style="text-align: left;">
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">Уменьшение размера платежа за счет увличения срока кредита</td>
-                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500.00</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important; width: auto; font-size: 12px;">Кредитные каникулы</td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;">1500</td>
+                    
+                  </tr>
+                  <tr style="text-align: left;">
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;"></td>
+                    <td style="border-color: gray; border: 1px solid; padding-left: 5px !important;"></td>
                     
                   </tr>
                 </tbody>
