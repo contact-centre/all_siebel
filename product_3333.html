@@ -95,43 +95,39 @@
           
             <div class="top_main">
               <div class="top_form">
-                <span class="top_form_name"><span class="top_form_name_">Фамилия Имя Отчество (01.01.2001)</span>-Физ.лица</span>
+                <span class="top_form_name"><span class="top_form_name_">СИДОРОВА ЕКАТЕРИНА СЕРГЕЕВНА (08.08.1992)</span>-Физ.лица</span>
                 <div class="row g-3 align-items-center m-8">
                   <div class="col-auto">
                     <label for="disabledTextInput" class="col-form-label col-form-label_my">Тематика обращения</label>
-                  </div>
-                  <div class="col-auto">
-                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline">
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
                   </div>
                 </div>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="disabledTextInput" class="col-form-label col-form-label_my">Потенциальный клиент</label>
-                  </div>
-                  <div class="col-auto">
-                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my" style="width: 100%; text-align: left;">Потенциальный клиент</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
                   </div>
                 </div>
-                <div class="top_form_text_red">
-                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
-                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="top_main_2">
-
-              <div class="top_main_">
-                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btn_top_main_" style="border: none;">Сохранить комментарий</button>
-              </div>
-
-              <div class="top_main_btn">
+                <div class="top_main_btn mb-4">
                 <button class="top_main_btn_">Завершить активность</button>
               </div>
+              </div>
+            </div>
+            
+            <div class="top_main_2 m-4">
+
+              <div class="top_main_" style="display: flex; flex-direction: column;">
+                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btn_top_main_ m-0" style="border: none; margin-top: 10px !important;">Сохранить комментарий</button>
+              </div>
 
             </div>
+            <div class="top_form_text_red m-4" style="text-align: right;">
+                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
+                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
+                  
+                </div>
 
           </div>
 
@@ -150,13 +146,14 @@
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
               
-              <div class="card_main" style="width: max-content;">
+              <div class="card_main" style="width: max-content; flex-direction: row;">
                 <div class="parametr_pro" style="width: 50%;">
                   <div class="btn_card">
                     <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры карты</p>
                     <form>
                       <button id="btn" class="btn_card_form">Выбор продукта</button>
-                      <button id="btn" class="btn_card_form"><a href="super_short_kk_3333.html" style="text-decoration: none; color: white;">Создать заявку</a></button>
+                      <button id="btn" class="btn_card_form"><a href="super_short_kk_3333.html" style="text-decoration: none; color: white; padding: 0;">Создать заявку</a></button>
+                      <button id="btn" class="btn_card_form" style="color: gray; background: darkgray;" disabled>Создать заявку на виртуальну карту</button>
                     </form>
                   </div>
                   <div class="form_card">
@@ -217,9 +214,10 @@
                   </div>
                 </div>
                   </div>
+                  
                 </div>
 
-                <div class="parametr_pro2" style="width: 100%; height: 200px;">
+                <div class="parametr_pro2" style="width: 50%; height: 200px;">
             <div class="btn_ncpk2 d-flex">
               <p class="m-2">Предложения</p>
               <form class="m-2">
@@ -238,17 +236,17 @@
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Сумма</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Срок</th>
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ставка %</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ежемесячный платеж</th>
-                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 250px;">Срок действия предложения</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px;">Ежемесячный платеж</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px; width: 250px;">Срок действия предложения</th>
                   </tr>
                   <tr style="background-color: #fff58a;">
-                    <td style="border-color: gray; border: 1px solid;"></td>
-                    <td style="border-color: gray; border: 1px solid;">MTSCashback</td>
-                    <td style="border-color: gray; border: 1px solid;">50000</td>
-                    <td style="border-color: gray; border: 1px solid;"></td>
-                    <td style="border-color: gray; border: 1px solid;">25.9%</td>
-                    <td style="border-color: gray; border: 1px solid;"></td>
-                    <td style="border-color: gray; border: 1px solid;">28.02.2022</td>
+                    <td style="border-color: gray; border: 1px solid; text-align: left; font-size: 12px;">4545454545</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">MTS Деньги Weekend</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">70 000</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">60</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">20.9%</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">0</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">30.12.2022</td>
                   </tr>
                   <tr>
                     <td></td>
@@ -312,7 +310,7 @@
                     <input type="text" id="input10" value="" name="input10" style="width: 185px; height: 32px;">
                   </div>
                 </div>
-
+                
               </div>
 
               <div class="form_search_pro2">
@@ -335,12 +333,13 @@
                 </div>
                 
               </div>
-
+              
+             
             </div>
-
+            
           </div>
 
-          <div class="parametr_pro2" style="width: 50%;">
+          <div class="parametr_pro2" style="width: 50%; font-size: small;">
             <div class="btn_ncpk2 d-flex">
               <p class="m-2">Предложение НЦПК</p>
               <form class="m-2">
@@ -363,13 +362,13 @@
                     <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 250px;">Срок действия предложения</th>
                   </tr>
                   <tr style="background-color: #fff58a;">
-                    <td style="border-color: gray; border: 1px solid;">НЦПК</td>
-                    <td style="border-color: gray; border: 1px solid;">PIL_ncpk_Diff</td>
-                    <td style="border-color: gray; border: 1px solid;">200 000</td>
+                    <td style="border-color: gray; border: 1px solid;"></td>
+                    <td style="border-color: gray; border: 1px solid;">PIL TOPUP2</td>
+                    <td style="border-color: gray; border: 1px solid;">500 000</td>
                     <td style="border-color: gray; border: 1px solid;">60</td>
-                    <td style="border-color: gray; border: 1px solid;">22</td>
-                    <td style="border-color: gray; border: 1px solid;">7646</td>
-                    <td style="border-color: gray; border: 1px solid;">31.01.2022</td>
+                    <td style="border-color: gray; border: 1px solid;">8.9</td>
+                    <td style="border-color: gray; border: 1px solid;">14 393</td>
+                    <td style="border-color: gray; border: 1px solid;">30.12.2022</td>
                   </tr>
                   <tr>
                     <td></td>
@@ -385,9 +384,9 @@
             </div>
 
           </div>
-
+          
         </div>
-
+              
             </div>
 
 
@@ -395,24 +394,22 @@
 
         </div>
       </div>
-
-
       <div id="hiddenfieldsDiv">
         <input type="hidden" id="value1" value="Основная карта" name="value1">
         <input type="hidden" id="value2" value="Кредитная карта" name="value2">
-        <input type="hidden" id="value3" value="МТС CASHBACK" name="value3">
-        <input type="hidden" id="value4" value="50000" name="value4">
+        <input type="hidden" id="value3" value="МТС Деньги Weekend" name="value3">
+        <input type="hidden" id="value4" value="70 000" name="value4">
         <input type="hidden" id="value5" value="RUB" name="value5">
-        <input type="hidden" id="value6" value="MasterCard World" name="value6">
+        <input type="hidden" id="value6" value="МИР - Полноформатный" name="value6">
         <input type="hidden" id="value7" value="Неименная" name="value7">
-        <input type="hidden" id="value8" value="НЦПК" name="value8">
+        <input type="hidden" id="value8" value="PIL TOPUP2" name="value8">
         <input type="hidden" id="value9" value="60" name="value9">
-        <input type="hidden" id="value10" value="200000" name="value10">
-        <input type="hidden" id="value11" value="7000" name="value11">
-        <input type="hidden" id="value12" value="22" name="value12">
+        <input type="hidden" id="value10" value="500 000" name="value10">
+        <input type="hidden" id="value11" value="" name="value11">
+        <input type="hidden" id="value12" value="8.9" name="value12">
       </div>
 
-     <script type="text/javascript">
+      <script type="text/javascript">
         function populateTextarea() {
 
       var element = document.getElementById("hiddenfieldsDiv");
@@ -425,6 +422,8 @@
       }
     }
   </script>
+  
+
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
