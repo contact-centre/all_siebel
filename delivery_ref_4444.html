@@ -80,7 +80,7 @@
       <div class="btn_top btn_top_del">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_top_2 btn_top_del_2">Назад</button>
-        <button class="btn_top_3"><a href="end_ref_4444.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_bottom_3" type="submit" onclick="redirectUser()" style="text-decoration: none; color: white;">Далее</button>
       </div>
 
       <div class="main_del_kk">
@@ -446,9 +446,18 @@
             <div class="col-auto">
               <select id="inputState" class="form-select refusal_form-select">
                 <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+                <option>Передумал оформлять кредит</option>
+                <option>Отказ КЛ: назв орг/ном тел.</option>
+                <option>Оформил в другом банке</option>
+                <option>Пасп не действ: Сайт ФМС</option>
+                <option>Высокая % ставка</option>
+                <option>Номер не существует</option>
+                <option>Официально не трудоустроен</option>
+                <option>Недостаточная сумма</option>
+                <option>Неверный номер</option>
+                <option>Нет постоянной регистрации</option>
+                <option>Иное</option>
+                <option>Технический сбой</option>
               </select>
             </div>
           </div>
@@ -517,7 +526,7 @@
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_bottom_2 btn_bottom_del_2">Назад</button>
-        <button class="btn_bottom_3"><a href="end_ref_4444.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_bottom_3" type="submit" onclick="redirectUser()" style="text-decoration: none; color: white;">Далее</button>
       </div>
 
 
@@ -541,6 +550,52 @@ $('#btn-on').click(function(){
   $('#checkboxt').prop('checked', true);
 });
 
+</script>
+
+<script type="text/javascript">
+
+         function redirectUser() {
+        var inputState = document.getElementById("inputState").value;
+        if(inputState == "Передумал оформлять кредит"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Отказ КЛ: назв орг/ном тел."){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Оформил в другом банке"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Пасп не действ: Сайт ФМС"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Высокая % ставка"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Номер не существует"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Официально не трудоустроен"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Недостаточная сумма"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Неверный номер"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Нет постоянной регистрации"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Иное"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Технический сбой"){
+          window.location.href = "end_fals_kl.html";
+        }
+         else if(inputState == ""){
+          window.location.href = "end_ref_4444.html";
+        }
+      }
 </script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
