@@ -10,6 +10,36 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      #node input {
+          width: 100%;
+        }
+      }
+    </style>
+
   </head>
   <body>
 
@@ -79,18 +109,18 @@
         <li class="nav-item nav-item_kk" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false"></li>
       </ul>
 
-      <div class="typeQuest">
-        <p class="">Оформление заявки на кредит &ensp;&ensp;<span class="typeQuest_plus">Полная анкета 1 из 2</span></p>
+      <div class="typeQuest" style="width: 50%;">
+        <p class="">Оформление заявки на кредит &ensp;&ensp;<span class="typeQuest_plus">Короткая анкета. Дополнительная информация</span></p>
       </div>
     
       <div class="btn_top">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_top_2">Назад</button>
-        <button class="btn_top_3"><a href="pol_ncpk_3_5555.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_top_3"><a href="end_fals.html" style="text-decoration: none; color: white;">Далее</a></button>
       </div>
 
       <div class="textName">
-        <p class="textName_word">Заявка 00000000000 - ФАМИЛИЯ ИМЯ ОТЧЕСТВО Офис оформления: Default Organization</p>
+        <p class="textName_word">Заявка 00000000000 - СКВОРЦОВ ЕВГЕНИЙ ЛЕОНИДОВИЧ Офис оформления: Default Organization</p>
       </div>
 
       <div class="refusal" style="width: 50%;">
@@ -114,17 +144,18 @@
           </div>
         
       </div>
-
-      
-      <nav class="adress_chapter_main adress_chapter_main_pol" style="display: flex; flex-direction: row;">
+      <div style="display: flex; flex-direction: row;">
+      <button class="p-0" type="" style="border-radius: 5px; border-color: transparent; color: darkgray;">Создать</button>
+      <nav class="adress_chapter_main adress_chapter_main_pol m-0" style="display: flex; flex-direction: row;">
          
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Адрес регистрации</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Адрес проживания</button>
+          <input type="button" name="test" class="nav-link test p-0"  data-bs-toggle="tab" data-bs-target="#nav-profile" value="Адрес проживания" role="tab" aria-controls="nav-profile" aria-selected="true"/>
+          <button class="nav-link p-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">Адрес регистрации</button>
         </div>
       </nav>
-<div class="tab-content" id="nav-tabContent">
+    </div>
+<div class="tab-content" id="nav-tabContent" style="border: #dee2e6 solid 2px;">
   
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
      <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес регистрации</p>
@@ -284,7 +315,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="20" placeholder="" aria-label="Дом" style="width: 253px;">
+                <input type="text" class="form-control form-control-sm" value="20" placeholder="" aria-label="Индекс" style="width: 253px;">
               </div>
             
           </div>
@@ -294,7 +325,7 @@
             <div class="del_info_text_chek">
           <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
             <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Совпадает с адресом <br>фактического <br>проживания</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <input class="form-check-input refusal_form-check-input" name='test' type="checkbox" value="" onclick="Go(this)"/>
           </div>
         </div>
             <div class="del_info_text_chek">
@@ -338,7 +369,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 125px; line-height: 0.9;">Резолюция<br> Фактора</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Резолюция" style="width: 400px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 400px;" disabled>
               </div>
             
           </div>
@@ -348,7 +379,7 @@
  
   
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-    <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес проживания</p>
+    <p class="adress_text" style="width: 50%; padding-top: 5px;">Адрес регистрации</p>
      <form class="form-adress">
           <div class="">
           <div class="row mb-1">
@@ -398,7 +429,7 @@
               </div>
               <div class="col-sm-1 p-0" style="width: 170px;">
                 <select id="inputCity" class="form-select form-select-sm City_form-select">
-                <option selected>Нижегородская</option>
+                <option selected>Тульская</option>
                 <option>Московская</option>
               </select>
               </div>
@@ -505,7 +536,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 150px;">Дом</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="30" placeholder="" aria-label="Дом" style="width: 253px;">
+                <input type="text" class="form-control form-control-sm" value="30" placeholder="" aria-label="Индекс" style="width: 253px;">
               </div>
             
           </div>
@@ -515,7 +546,7 @@
             <div class="del_info_text_chek">
           <div class="form-check refusal_form-check p-0" style="margin-top: 30px;">
             <label class="form-check-label refusal_form-check-label" for="flexCheckChecked">Совпадает с адресом <br>фактического <br>проживания</label>
-            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <input class="form-check-input refusal_form-check-input" type="checkbox" value="" id="">
           </div>
         </div>
             <div class="del_info_text_chek">
@@ -560,7 +591,7 @@
             
               <label for="inputName" class="col-sm-1 col-form-label col-form-label-sm" style="text-align: right; width: 125px; line-height: 0.9;">Резолюция<br> Фактора</label>
               <div class="col-sm-1">
-                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Резолюция" style="width: 400px;" disabled>
+                <input type="text" class="form-control form-control-sm" value="" placeholder="" aria-label="Квартира" style="width: 400px;" disabled>
               </div>
             
           </div>
@@ -584,7 +615,7 @@
             <label>Статус</label>
             <input type="" id="btn_pol_ncpk" name="" placeholder="Новая" value="" disabled="" style="width: 250px;">
           </div>
-          <button class="btn_pol_ncpk_2"  onclick="insert(' Предварительно одобрена ')">Обновить</button>
+          <button class="btn_pol_ncpk_2"  onclick="insert(' Отклонена ')">Обновить</button>
           <button class="btn_pol_ncpk_2"  onclick="insert(' Отправлено в СПР ')">Отправить</button>
           </div>
         </div>
@@ -594,7 +625,7 @@
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_bottom_2">Назад</button>
-        <button class="btn_bottom_3"><a href="pol_ncpk_3_5555.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_bottom_3"><a href="end_fals.html" style="text-decoration: none; color: white;">Далее</a></button>
       </div>
 
 
@@ -609,9 +640,13 @@ function insert (word) {
 }
 </script>
 
+
+
+
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
