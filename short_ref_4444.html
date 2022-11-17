@@ -115,14 +115,14 @@
     
       <div class="btn_top">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
-        <button class="btn_bottom_3" onclick="redirectUser();" style="text-decoration: none; color: white;">Далее</button>
+        <button class="btn_bottom_3" type="submit" onclick="redirectUser()" style="text-decoration: none; color: white;">Далее</button>
       </div>
 
       <div class="textName">
         <p class="textName_word">Заявка 00000000000 - РОМАНОВ АЛЕКСАНДР ИВАНОВИЧ Офис оформления: Default Organization</p>
       </div>
 
-      <div class="refusal">
+      <div class="refusal" style="width: 40%;">
         
           <div class="form-check refusal_form-check">
             <label class="form-check-label refusal_form-check-label" for="flexCheckDefault">Отказ клиента</label>
@@ -135,9 +135,18 @@
             <div class="col-auto">
               <select id="inputState" class="form-select refusal_form-select">
                 <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+                <option>Передумал оформлять кредит</option>
+                <option>Отказ КЛ: назв орг/ном тел.</option>
+                <option>Оформил в другом банке</option>
+                <option>Пасп не действ: Сайт ФМС</option>
+                <option>Высокая % ставка</option>
+                <option>Номер не существует</option>
+                <option>Официально не трудоустроен</option>
+                <option>Недостаточная сумма</option>
+                <option>Неверный номер</option>
+                <option>Нет постоянной регистрации</option>
+                <option>Иное</option>
+                <option>Технический сбой</option>
               </select>
             </div>
           </div>
@@ -437,22 +446,56 @@
 
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
-        <button class="btn_bottom_3" onclick="redirectUser();" style="text-decoration: none; color: white;">Далее</button>
+        <button class="btn_bottom_3" onclick="redirectUser()" style="text-decoration: none; color: white;" id="submit">Далее</button>
       </div>
 
 
       <script type="text/javascript">
 
-          function redirectUser() {
-          var code = document.getElementById("code").value;
-          if(code == "4444"){
-            window.location.href = "sogl_ref_4444.html";
-          }
-           else if(code == "2222"){
-            window.location.href = "sogl_fals_1.html";
-          }
+         function redirectUser() {
+        var inputState = document.getElementById("inputState").value;
+        if(inputState == "Передумал оформлять кредит"){
+          window.location.href = "end_fals_kl.html";
         }
-      </script>
+        else if(inputState == "Отказ КЛ: назв орг/ном тел."){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Оформил в другом банке"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Пасп не действ: Сайт ФМС"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Высокая % ставка"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Номер не существует"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Официально не трудоустроен"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Недостаточная сумма"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Неверный номер"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Нет постоянной регистрации"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Иное"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Технический сбой"){
+          window.location.href = "end_fals_kl.html";
+        }
+         else if(inputState == ""){
+          window.location.href = "sogl_ref_4444.html";
+        }
+      }
+</script>
+
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
