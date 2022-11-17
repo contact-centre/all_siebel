@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Siebel</title>
+    <style type="text/css">
+      .nav-item_my2p:after {
+        left: 150px;
+    }
+      * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+
+    <header class="header">
+
+      <div class="header-logo">
+        
+      </div>
+
+    </header>
+      
+      <ul class="nav nav-tabs ui-tabs-nav " role="tablist" aria-live="off">
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen0" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/home_logo.png">
+            </span>Домой
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/say_logo.png">
+            </span>Обращения
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/serv_logo.png">
+            </span>Обслуживание
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/product_logo.png">
+            </span>Продуктовый каталог
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/zayav_logo.png">
+            </span>Заявки
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/serv_w_logo.png">
+            </span>Претензионная работа
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Телесэйлс Выбрано">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link active" role="presentation" tabindex="-1" aria-current="page" style="background-color: black; border-color: black; color: white;">
+            <span class="">
+              <img src="src/img/home_logo.png">
+            </span>Телесэйлс
+          </a>
+        </li>
+      </ul>
+
+     
+      <ul class="nav nav-tabs nav-tabs_my" role="tablist" aria-live="off">
+        <li class="nav-item nav-item_my1p" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Поиск клиента Выбрано">
+          <a data-tabindex="tabView0" href="#" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Поиск клиента</a>
+        </li>
+        <li class="nav-item nav-item_my2p" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false">
+          <a data-tabindex="tabView1" href="#" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Создать заявку</a>
+        </li>
+        <li class="nav-item nav-item_my3p" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false">
+          <a data-tabindex="tabView2" href="#" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Заявки</a>
+        </li>
+      </ul>
+
+      <div class="container-fluid" style="margin-top: 40px;">
+        <div class="row" style="margin-right: 0;">
+
+          <div class="top_blok">
+          
+            <div class="top_main">
+              <div class="top_form">
+                <span class="top_form_name"><span class="top_form_name_">СМИРНОВА ЕЛЕНА МАРКОВНА (06.06.1996)</span>-Физ.лица</span>
+                <div class="row g-3 align-items-center m-8">
+                  <div class="col-auto">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my">Тематика обращения</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my" style="width: 100%; text-align: left;">Потенциальный клиент</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
+                  </div>
+                </div>
+                <div class="top_main_btn mb-4">
+                <button class="top_main_btn_">Завершить активность</button>
+              </div>
+              </div>
+            </div>
+            
+            <div class="top_main_2 m-4">
+
+              <div class="top_main_" style="display: flex; flex-direction: column;">
+                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btn_top_main_ m-0" style="border: none; margin-top: 10px !important;">Сохранить комментарий</button>
+              </div>
+
+            </div>
+            <div class="top_form_text_red m-4" style="text-align: right;">
+                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
+                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
+                  
+                </div>
+
+          </div>
+
+          <div class="m-2" style="background-color: black; border-radius: 5px 5px 0 0; width: 190px;">
+            <p class="p-0 m-0"style="color: white; font-size: 13.8px; font-weight: bold; line-height: 2;">Оформление продуктов</p>
+          </div>
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active nav-link_pro_my" id="card-tab" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab" aria-controls="card" aria-selected="true">Карта</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link nav-link_pro_my" id="ncpk-tab" data-bs-toggle="tab" data-bs-target="#ncpk" type="button" role="tab" aria-controls="ncpk" aria-selected="false">НЦПК</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="card" role="tabpanel" aria-labelledby="card-tab">
+              
+              <div class="card_main" style="width: max-content; flex-direction: row;">
+                <div class="parametr_pro" style="width: 50%;">
+                  <div class="btn_card">
+                    <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры карты</p>
+                    <form>
+                      <button id="btn" class="btn_card_form">Выбор продукта</button>
+                      <button id="btn" class="btn_card_form"><a href="short_kk_4242.html" style="text-decoration: none; color: white; padding: 0;">Создать заявку</a></button>
+                      <button id="btn" class="btn_card_form" style="color: gray; background: darkgray;" disabled>Создать заявку на виртуальну карту</button>
+                    </form>
+                  </div>
+                  <div class="form_card">
+                    <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Вид карты</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input1" value="" name="input1" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Тип карты</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input2" value="" name="input2" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Продукт</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input3" value="" name="input3" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                    <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 0; font-size: 14.5px; width: 130px">Запрашиваемый лимит</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input4" value="" name="input4" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Валюта</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input5" value="" name="input5" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                   <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Категория карты</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input6" value="" name="input6" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                    <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right; margin: 0; padding: 11px 0; font-size: 14.5px; width: 130px">Способ выпуска</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input7" value="" name="input7" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                  </div>
+                  
+                </div>
+
+                <div class="parametr_pro2" style="width: 50%; height: 200px;">
+            <div class="btn_ncpk2 d-flex">
+              <p class="m-2">Предложения</p>
+              <form class="m-2">
+                  <button class="btn_ncpk2_table">Меню</button>
+                  <button class="btn_ncpk2_table">Найти</button>
+                  <input class="btn_ncpk2_table" type="button" value="Выбрать" name="button" onclick="populateTextarea()" style="text-decoration: none; color: white;">
+              </form>
+            </div>
+
+            <div class="table_pro">
+              <table>
+                <tbody  style="text-align: center;">
+                  <tr>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Имя предложения</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Продукт</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Сумма</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Срок</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ставка %</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px;">Ежемесячный платеж</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px; width: 250px;">Срок действия предложения</th>
+                  </tr>
+                  <tr style="background-color: #fff58a;">
+                    <td style="border-color: gray; border: 1px solid; text-align: left; font-size: 12px;">2323232323</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">MTS CASHBACK</td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;"></td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;"></td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;"></td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;"></td>
+                    <td style="border-color: gray; border: 1px solid; font-size: 12px;">30.12.2022</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-pane fade" id="ncpk" role="tabpanel" aria-labelledby="ncpk-tab">
+
+              <div class="ncpk_main">
+
+              <div class="parametr_pro" style="width: 50%;">
+
+              <div class="btn_ncpk">
+                <p style="background-color: #ccc; width: 100%; color: white; font-size: 18px;">Параметры кредита</p>
+                <form>
+                  <button id="btn" class="btn_ncpk_form">Новый расчет</button>
+                  <input class="btn_ncpk2_table" type="button" value="Рассчитать" name="button" style="text-decoration: none; color: white;">
+                  <button class="btn_ncpk2_table"><a href="short_ncpk_4242.html" style="text-decoration: none; color: white;">Создать заявку</a></button>
+                </form>
+              </div>
+
+              <div class="form_search_pro">
+
+              <div class="form_search_pro1">
+
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Тип продукта</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input8" value="" name="input8" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Срок кредита мес.</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input9" value="" name="input9" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro1" style="text-align: right;">Сумма кредита</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input10" value="" name="input10" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="form_search_pro2">
+
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Ежемесячный платеж</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input11" value="" name="input11" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputText" class="col-form-label col-form-label_pro2" style="text-align: right;">Процентная ставка</label>
+                  </div>
+                  <div class="col-auto" id="visiblefieldsDiv">
+                    <input type="text" id="input12" value="" name="input12" style="width: 185px; height: 32px;">
+                  </div>
+                </div>
+                
+              </div>
+              
+             
+            </div>
+            
+          </div>
+
+          <div class="parametr_pro2" style="width: 50%;">
+            <div class="btn_ncpk2 d-flex">
+              <p class="m-2">Предложение НЦПК</p>
+              <form class="m-2">
+                  <button class="btn_ncpk2_table">Меню</button>
+                  <button class="btn_ncpk2_table">Найти</button>
+                  <input class="btn_ncpk2_table" type="button" value="Выбрать" name="button" onclick="populateTextarea()" style="text-decoration: none; color: white;">
+              </form>
+            </div>
+
+            <div class="table_pro">
+              <table>
+                <tbody style="text-align: center;">
+                  <tr>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Имя предложения</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Продукт</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Сумма</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Срок</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ставка %</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Ежемесячный платеж</th>
+                    <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 250px;">Срок действия предложения</th>
+                  </tr>
+                  <tr style="background-color: #fff58a;">
+                    <td style="border-color: gray; border: 1px solid;"></td>
+                    <td style="border-color: gray; border: 1px solid;">PIL_Refin_Restuct_Online_</td>
+                    <td style="border-color: gray; border: 1px solid;">267 442</td>
+                    <td style="border-color: gray; border: 1px solid;">72</td>
+                    <td style="border-color: gray; border: 1px solid;">20.9</td>
+                    <td style="border-color: gray; border: 1px solid;">6 546</td>
+                    <td style="border-color: gray; border: 1px solid;">30.12.2022</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          
+        </div>
+              
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div id="hiddenfieldsDiv">
+        <input type="hidden" id="value1" value="Основная карта" name="value1">
+        <input type="hidden" id="value2" value="Кредитная карта" name="value2">
+        <input type="hidden" id="value3" value="МТС CASHBACK" name="value3">
+        <input type="hidden" id="value4" value="" name="value4">
+        <input type="hidden" id="value5" value="RUB" name="value5">
+        <input type="hidden" id="value6" value="МИР - Полноформатный" name="value6">
+        <input type="hidden" id="value7" value="Неименная" name="value7">
+        <input type="hidden" id="value8" value="PIL_Refin_Restuct_Online_FA" name="value8">
+        <input type="hidden" id="value9" value="72" name="value9">
+        <input type="hidden" id="value10" value="267 442" name="value10">
+        <input type="hidden" id="value11" value="" name="value11">
+        <input type="hidden" id="value12" value="20.9" name="value12">
+      </div>
+
+      <script type="text/javascript">
+        function populateTextarea() {
+
+      var element = document.getElementById("hiddenfieldsDiv");
+      var numOfChildren = element.childElementCount;
+
+      for (var i=1; i <= numOfChildren; i++) {
+
+        txt = document.getElementById('value'+i).value;
+        document.getElementById('input'+i).value = txt;
+      }
+    }
+  </script>
+  
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="src/js/main.js"></script>
+
+    <!-- Вариант 2: Bootstrap JS отдельно от Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
