@@ -135,9 +135,16 @@
             <div class="col-auto">
               <select id="inputState" class="form-select refusal_form-select">
                 <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+                <option>Передумал оформлять карту</option>
+                <option>Высокая процентная ставка</option>
+                <option>Отсутствует льготный период</option>
+                <option>Низкий кредитный лимит</option>
+                <option>Ненужна дебетовая карта</option>
+                <option>Стоимость обслуживания</option>
+                <option>Категория карты</option>
+                <option>Иное</option>
+                <option>Несовпадение кретичных данных</option>
+                <option>Несовпадение ОМТ</option>
               </select>
             </div>
           </div>
@@ -214,15 +221,43 @@
        <script type="text/javascript">
 
           function redirectUser() {
-          var code = document.getElementById("code").value;
-          if(code > "20000"){
-            window.location.href = "delivery_kk_1_4444.html";
-          }
-           else if(code <= "20000"){
-            window.location.href = "end_fals.html";
-          }
+        var inputState = document.getElementById("inputState").value;
+        if(inputState == "Передумал оформлять карту"){
+          window.location.href = "end_fals_kl.html";
         }
+        else if(inputState == "Высокая процентная ставка"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Отсутствует льготный период"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Низкий кредитный лимит"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Ненужна дебетовая карта"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Стоимость обслуживания"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Категория карты"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Иное"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Несовпадение кретичных данных"){
+          window.location.href = "end_fals_kl.html";
+        }
+        else if(inputState == "Несовпадение ОМТ"){
+          window.location.href = "end_fals_kl.html";
+        }
+         else if(inputState == ""){
+          window.location.href = "delivery_kk_1_4444.html";
+        }
+      }
       </script>
+      
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
     <!-- Вариант 1: Bootstrap в связке с Popper -->
