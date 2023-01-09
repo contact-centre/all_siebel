@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Siebel</title>
+    <style type="text/css">
+      .nav-item_my2p:after {
+        left: 235px;
+    }
+
+    * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+
+    <header class="header">
+
+      <div class="header-logo">
+        
+      </div>
+
+    </header>
+      
+      <ul class="nav nav-tabs ui-tabs-nav " role="tablist" aria-live="off">
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen0" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/home_logo.png">
+            </span>Домой
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/say_logo.png">
+            </span>Обращения
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/serv_logo.png">
+            </span>Обслуживание
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/product_logo.png">
+            </span>Продуктовый каталог
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/zayav_logo.png">
+            </span>Заявки
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="-1">
+          <a data-tabindex="tabScreen1" href="#" class="nav-link" role="presentation" tabindex="-1" aria-current="page" style="color:black;">
+            <span class="">
+              <img src="src/img/serv_w_logo.png">
+            </span>Претензионная работа
+          </a>
+        </li>
+        <li class="nav-item" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Телесэйлс Выбрано">
+          <a data-tabindex="tabScreen1" href="index_.html" class="nav-link active" role="presentation" tabindex="-1" aria-current="page" style="background-color: black; border-color: black; color: white;">
+            <span class="">
+              <img src="src/img/home_logo.png">
+            </span>Телесэйлс
+          </a>
+        </li>
+      </ul>
+
+     
+      <ul class="nav nav-tabs nav-tabs_my" role="tablist" aria-live="off">
+        <li class="nav-item nav-item_my1p" role="tab" tabindex="0" aria-selected="true" aria-expanded="true" aria-label="Поиск клиента Выбрано">
+          <a data-tabindex="tabView0" href="#" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Поиск клиента</a>
+        </li>
+        <li class="nav-item nav-item_my2p" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false">
+          <a data-tabindex="tabView1" href="product_3333.html" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Создать заявку</a>
+        </li>
+        <li class="nav-item nav-item_my3p" role="tab" tabindex="-1" aria-selected="false" aria-expanded="false">
+          <a data-tabindex="tabView2" href="#" class="nav-link nav-link_my" role="presentation" tabindex="-1" style="border: none; color:white;">Заявки</a>
+        </li>
+      </ul>
+
+      <div class="container-fluid" style="margin-top: 40px;">
+        <div class="row" style="margin-right: 0;">
+
+          <div class="top_blok">
+          
+            <div class="top_main">
+              <div class="top_form">
+                <span class="top_form_name"><span class="top_form_name_">ИВАНОВ ИВАН ИВАНОВИЧ (01.01.2001)</span>-Физ.лица</span>
+                <div class="row g-3 align-items-center m-8">
+                  <div class="col-auto">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my">Тематика обращения</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
+                  </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="disabledTextInput" class="col-form-label col-form-label_my" style="width: 100%; text-align: left;">Потенциальный клиент</label>
+                    <input type="text" id="disabledTextInput" class="form-control" aria-describedby="textHelpInline" disabled style="height: 25px;">
+                  </div>
+                </div>
+                <div class="top_main_btn mb-4">
+                <button class="top_main_btn_">Завершить активность</button>
+              </div>
+              </div>
+            </div>
+            
+            <div class="top_main_2 m-4">
+
+              <div class="top_main_" style="display: flex; flex-direction: column;">
+                <span class="top_main_text" style="display: inline-block; margin: 5px;">Комментарий</span>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btn_top_main_ m-0" style="border: none; margin-top: 10px !important;">Сохранить комментарий</button>
+              </div>
+
+            </div>
+            <div class="top_form_text_red m-4" style="text-align: right;">
+                  <p>Необходимо осуществить операцию подключения к услугам ДБО</p>
+                  <p>"Интернет-банкинг"/"Мобильный-банкинг"</p>
+                  <p>Внимание! У клиента имеются незавершенные заявки.</p>
+                </div>
+
+          </div>
+
+         <div class="sogl_prod" style="border-radius: 10px; border: solid 2px #e9e9e9; margin: 10px; height: 150px; padding: 0;">
+        <div class="sogl_prod_btn" style="background-color: #e9e9e9;">
+          <p class="p-1 m-1" style="font-weight: 500;">Заявки</p>
+          <form style="display: flex; flex-direction: row;">
+            <button class="btn_sogl_prod2 m-1">Меню</button>
+            <button class="btn_sogl_prod2 m-1" disabled>Продолжить работу</button>
+            <label class="m-1" style="line-height: 2;">Перевыбор решения</label>
+            <input type="" name="" placeholder="" value="" class="m-1">
+            <select class="form-select m-1" aria-label="select" style="width: 220px; padding: 0; margin-left: 10px;">
+                  <option selected>Номер заявки</option>
+                  <option value="1"></option>
+                  <option value="2"></option>
+                </select>
+          </form>
+        </div>
+        <table style="width: 100%; border: solid 2px #e9e9e9;">
+          <tbody style="text-align: center;">
+            <tr class="">
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Номер заявки</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Дата создания</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Тип заявки</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Статус заявки</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Стадия заявки</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px; width: 80px;">Офис оформления</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 8px; width: 55px;">Код точки РТК/Ко</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Сумма кредита</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 60px;">Срок кредита</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Тариф</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 75px;">Канал поступления</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 60px;">Текущий канал</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px; width: 50px;">Причина</th>
+              <th class="blok_text_2 p-0" style="line-height: 0; font-size: 10px;">Наименование продукта</th>
+            </tr>
+            <tr style="background-color: #fff58a; border: solid 2px #e9e9e9; white-space: nowrap;">
+              <td style="border-color: #e9e9e9; border: 1px solid; text-align: left; font-size: 11px;">0000111100001111</td>
+              <td style="border-color: #e9e9e9; border: 1px solid; text-align: left; font-size: 11px;">02.07.2022 17:31:43</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Карты</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Новая</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Ожидание клиента</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Default Organiz.</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;"></td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">20 000.00Руб.</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;"></td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">МТС_Деньги_Zero</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Сайт</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">КЦ</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;"></td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">МТС Деньги Zero</td>
+            </tr>
+            <tr style="border: solid 2px #e9e9e9; white-space: nowrap;">
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">0000222200002222</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">12.06.2022 14:15:46</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">НЦПК</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Отклонена</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Полная анкета</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Default Organiz.</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">999</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">800 000Руб.</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;"></td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">PIL Payroll Standart</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Сайт</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">КЦ</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">Отклонена</td>
+              <td style="border-color: #ced4da; border: 1px solid; text-align: left; font-size: 11px;">PIL Payroll Standart</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="src/js/main.js"></script>
+
+    <!-- Вариант 2: Bootstrap JS отдельно от Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
