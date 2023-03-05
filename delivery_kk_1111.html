@@ -80,7 +80,8 @@
       <div class="btn_top btn_top_del">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_top_2 btn_top_del_2">Назад</button>
-        <button class="btn_top_3"><a href="end_kk_1111.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <!--<button class="btn_top_3" onclick="linklist(document.menu.sel)"><a href="end_kk_1111.html" style="text-decoration: none; color: white;">Далее</a></button>-->
+        <button class="btn_bottom_3" style="text-decoration: none; color: white;" onclick="redirectUser();linklist(document.menu.sel)">Далее</button>
       </div>
 
       <div class="main_del_kk">
@@ -489,14 +490,21 @@
             <div class="col-auto refusal_form-list">
               <label for="inputText" class="col-form-label refusal_col-form-label">Причина отказа:</label>
             </div>
-            <div class="col-auto">
-              <select id="inputState" class="form-select refusal_form-select">
-                <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+            <form class="col-auto" name="menu">
+              <select id="inputState" class="form-select refusal_form-select" name="sel">
+                <option selected value="#"></option>
+                <option value="end_fals_kl.html">Передумал оформлять карту</option>
+                <option value="end_fals_kl.html">Высокая процентная ставка</option>
+                <option value="end_fals_kl.html">Отсутствует льготный период</option>
+                <option value="end_fals_kl.html">Низкий кредитный лимит</option>
+                <option value="end_fals_kl.html">Ненужна дебетовая карта</option>
+                <option value="end_fals_kl.html">Стоимость обслуживания</option>
+                <option value="end_fals_kl.html">Категория карты</option>
+                <option value="end_fals_kl.html">Иное</option>
+                <option value="end_fals_kl.html">Несовпадение кретичных данных</option>
+                <option value="end_fals_kl.html">Несовпадение ОМТ</option>
               </select>
-            </div>
+            </form>
           </div>
         
       </div>
@@ -562,7 +570,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxd" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">20.01.2023</td>
+              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">15.03.2023</td>
             </tr>
             <tr>
               <td>
@@ -570,7 +578,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">25.01.2023</td>
+              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">16.03.2023</td>
             </tr>
             <tr>
               <td>
@@ -578,7 +586,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">26.01.2023</td>
+              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">17.03.2023</td>
             </tr>
             <tr>
               <td>
@@ -586,7 +594,7 @@
                   <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." style="border: none;">
                 </div>
               </td>
-              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">27.01.2023</td>
+              <td class="time_" style="padding-left: 15px !important; font-size: 13px;">18.03.2023</td>
             </tr>
           </tbody>
         </table>
@@ -659,7 +667,8 @@
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_bottom_2 btn_bottom_del_2">Назад</button>
-        <button class="btn_bottom_3"><a href="end_kk_1111.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <!--<button class="btn_top_3" onclick="linklist(document.menu.sel)"><a href="end_kk_1111.html" style="text-decoration: none; color: white;">Далее</a></button>-->
+        <button class="btn_bottom_3" style="text-decoration: none; color: white;" onclick="redirectUser();linklist(document.menu.sel)">Далее</button>
       </div>
 
 
@@ -743,6 +752,25 @@ for (var i = 0; i < td.length; i++) {
     }
 }
 </script>
+<script language="JavaScript" type="text/javascript">
+
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+
+</script>
+<script type="text/javascript">
+
+          function redirectUser() {
+          {
+   document.location = 'end_kk_1111.html';
+}
+        }
+      </script>
     <!-- Вариант 1: Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
