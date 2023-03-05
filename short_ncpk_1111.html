@@ -10,6 +10,35 @@
     <link rel="stylesheet" href="src/css/style.css">
 
     <title>Siebel</title>
+    <style type="text/css">
+      * {
+        font-size: small;
+      }
+      input {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      option {
+        background: black;
+        color: white;
+      }
+
+      label {
+        font-size: 14px !important;
+        color: gray;
+      }
+
+      select {
+        font-size: 13px;
+        border: 1px solid #ced4da !important;
+      }
+
+      #node input {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
 
@@ -85,14 +114,14 @@
     
       <div class="btn_top">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
-        <button class="btn_bottom_3" onclick="redirectUser();" style="text-decoration: none; color: white;">Далее</button>
+        <button class="btn_bottom_3" onclick="redirectUser();linklist(document.menu.sel);" style="text-decoration: none; color: white;">Далее</button>
       </div>
 
       <div class="textName">
         <p class="textName_word">Заявка 00000000000 - ИВАНОВ ИВАН ИВАНОВИЧ Офис оформления: Default Organization</p>
       </div>
 
-      <div class="refusal">
+      <div class="refusal" style="width: 45%;">
         
           <div class="form-check refusal_form-check">
             <label class="form-check-label refusal_form-check-label" for="flexCheckDefault">Отказ клиента</label>
@@ -102,14 +131,23 @@
             <div class="col-auto refusal_form-list">
               <label for="inputText" class="col-form-label refusal_col-form-label">Причина отказа:</label>
             </div>
-            <div class="col-auto">
-              <select id="inputState" class="form-select refusal_form-select">
-                <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+            <form class="col-auto" name="menu">
+              <select id="inputState" class="form-select refusal_form-select" name="sel">
+                <option selected value="#"></option>
+                <option value="end_fals_kl.html">Передумал оформлять кредит</option>
+                <option value="end_fals_kl.html">Отказ КЛ: назв орг/ном тел.</option>
+                <option value="end_fals_kl.html">Оформил в другом банке</option>
+                <option value="end_fals_kl.html">Пасп не действ: Сайт ФМС</option>
+                <option value="end_fals_kl.html">Высокая % ставка</option>
+                <option value="end_fals_kl.html">Номер не существует</option>
+                <option value="end_fals_kl.html">Официально не трудоустроен</option>
+                <option value="end_fals_kl.html">Недостаточная сумма</option>
+                <option value="end_fals_kl.html">Неверный номер</option>
+                <option value="end_fals_kl.html">Нет постоянной регистрации</option>
+                <option value="end_fals_kl.html">Иное</option>
+                <option value="end_fals_kl.html">Технический сбой</option>
               </select>
-            </div>
+            </form>
           </div>
         
       </div>
@@ -407,7 +445,7 @@
 
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
-        <button class="btn_bottom_3" onclick="redirectUser();" style="text-decoration: none; color: white;">Далее</button>
+        <button class="btn_bottom_3" onclick="redirectUser();linklist(document.menu.sel);" style="text-decoration: none; color: white;">Далее</button>
       </div>
 
 
@@ -423,6 +461,18 @@
           }
         }
       </script>
+
+     <script language="JavaScript" type="text/javascript">
+
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+
+</script>
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
