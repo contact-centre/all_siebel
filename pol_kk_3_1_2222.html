@@ -112,7 +112,7 @@
       <div class="btn_top">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_top_2">Назад</button>
-        <button class="btn_top_3"><a href="pol_kk_4_2222.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_bottom_3" style="text-decoration: none; color: white;" onclick="redirectUser();linklist(document.menu.sel)">Далее</button>
       </div>
 
       <div class="textName">
@@ -129,14 +129,21 @@
             <div class="col-auto refusal_form-list">
               <label for="inputText" class="col-form-label refusal_col-form-label">Причина отказа:</label>
             </div>
-            <div class="col-auto">
-              <select id="inputState" class="form-select refusal_form-select">
-                <option selected></option>
-                <option>Высокая ставка</option>
-                <option>Большая сумма</option>
-                <option>Маленькая сумма</option>
+            <form class="col-auto" name="menu">
+              <select id="inputState" class="form-select refusal_form-select" name="sel">
+                <option selected value="#"></option>
+                <option value="end_fals_kl.html">Передумал оформлять карту</option>
+                <option value="end_fals_kl.html">Высокая процентная ставка</option>
+                <option value="end_fals_kl.html">Отсутствует льготный период</option>
+                <option value="end_fals_kl.html">Низкий кредитный лимит</option>
+                <option value="end_fals_kl.html">Ненужна дебетовая карта</option>
+                <option value="end_fals_kl.html">Стоимость обслуживания</option>
+                <option value="end_fals_kl.html">Категория карты</option>
+                <option value="end_fals_kl.html">Иное</option>
+                <option value="end_fals_kl.html">Несовпадение кретичных данных</option>
+                <option value="end_fals_kl.html">Несовпадение ОМТ</option>
               </select>
-            </div>
+            </form>
           </div>
         
       </div>
@@ -496,7 +503,7 @@
       <div class="btn_bottom">
         <button class="btn_top_1"><a href="index.html" style="text-decoration: none; color: white;">Сохранить и выйти</a></button>
         <button class="btn_bottom_2">Назад</button>
-        <button class="btn_bottom_3"><a href="pol_kk_4_2222.html" style="text-decoration: none; color: white;">Далее</a></button>
+        <button class="btn_bottom_3" style="text-decoration: none; color: white;" onclick="redirectUser();linklist(document.menu.sel)">Далее</button>
       </div>
 
 
@@ -528,6 +535,26 @@
     }
 }
 </script>
+
+<script language="JavaScript" type="text/javascript">
+
+function linklist(what){
+var selectedopt=what.options[what.selectedIndex]
+if (document.getElementById && selectedopt.getAttribute("target")=="new")
+window.open(selectedopt.value)
+else
+window.location=selectedopt.value
+}
+
+</script>
+<script type="text/javascript">
+
+          function redirectUser() {
+          {
+   document.location = 'pol_kk_4_2222.html';
+}
+        }
+      </script>
 
     <!-- Дополнительный JavaScript; выберите один из двух! -->
 
